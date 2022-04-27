@@ -1,0 +1,96 @@
+
+
+/*-- scss:defaults --*/
+
+// @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700;900&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap');
+
+$font-family-sans-serif: "Inter", Helvetica, sans-serif !default;
+$font-family-monospace: "Fira Code", monospace !default;
+
+// $body-bg: hsl(176, 94%, 94%);
+$body-bg: black;
+$body-color: white;
+$headings-color: transparent !default; // because we're texturing them
+$link-color: #42affa;
+
+$theme-red: #ff0000b3;
+$theme-orange: #cc6600aa;
+$theme-yellow: #ff9900aa;
+$theme-seafoam: #00aa6699;
+$theme-emerald: #0077228f;
+$theme-lightblue: #0099ff99;
+$theme-darkblue: #0044ffa3;
+$theme-indigo: #4422ffaa;
+$theme-purple: #6611bbaa;
+$theme-pink: #ff0077aa;
+$theme-brown: #88440099;
+$theme-white: #ffffff99;
+$theme-black: #050505bb;
+
+.boxcol {
+  background-color: #000000cc;
+  color: white;
+  padding: 30px;
+}
+
+/* blackboard fx inspo: https://graphicburger.com/chalkboard-typography-text-effects */
+
+
+h1, h2, h3, h4, h5, h6 {
+  // slide headers
+  .reveal .text-wash-red & { color: $theme-red }
+  .reveal .text-wash-orange & { color: $theme-orange }
+  .reveal .text-wash-yellow & { color: $theme-yellow }
+  .reveal .text-wash-seafoam & { color: $theme-seafoam }
+  .reveal .text-wash-emerald & { color: $theme-emerald }
+  .reveal .text-wash-lightblue & { color: $theme-lightblue }
+  .reveal .text-wash-darkblue & { color: $theme-darkblue }
+  .reveal .text-wash-indigo & { color: $theme-indigo }
+  .reveal .text-wash-purple & { color: $theme-purple }
+  .reveal .text-wash-pink & { color: $theme-pink }
+  .reveal .text-wash-brown & { color: $theme-brown }
+  .reveal .text-wash-black & { color: $theme-black }
+  .reveal .text-wash-white & { color: $theme-white }
+}
+
+.reveal {
+  section {
+    h1, h2, h3, h4, h5, h6 {
+      // other headers
+      &.text-wash-red { color: $theme-red }
+      &.text-wash-orange { color: $theme-orange }
+      &.text-wash-yellow { color: $theme-yellow }
+      &.text-wash-seafoam { color: $theme-seafoam }
+      &.text-wash-emerald { color: $theme-emerald }
+      &.text-wash-lightblue { color: $theme-lightblue }
+      &.text-wash-darkblue { color: $theme-darkblue }
+      &.text-wash-indigo { color: $theme-indigo }
+      &.text-wash-purple { color: $theme-purple }
+      &.text-wash-pink { color: $theme-pink }
+      &.text-wash-brown { color: $theme-brown }
+      &.text-wash-black { color: $theme-black }
+      &.text-wash-white { color: $theme-white }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+        
+    // noise effect for all headers
+    background-image: url("/images/chalk2.jpg");
+    background-size: 200px;
+    -webkit-background-clip: text;
+    filter: contrast(200%) url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg">\
+        <filter id="filter" x="-10%" y="-10%" width="120%" height="120%">\
+          <feTurbulence baseFrequency="0.005" numOctaves="1" result="turbulence" />\
+          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>\
+        </filter>\
+      </svg>#filter');
+  }
+}

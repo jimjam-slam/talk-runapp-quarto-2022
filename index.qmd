@@ -1,0 +1,107 @@
+---
+title: "Runapp talk"
+author: "James Goldie"
+format:
+  revealjs: 
+    theme: [default, style.scss]
+---
+
+## Outline
+
+- What is Quarto?
+  - How it builds on RMarkdown
+    - RMarkdown/Knitr ecosystem, extensions, other languages
+    - Extensibility! 🎉
+    - But also: fragmentation,which  and heavy reliance on R
+  - Quarto packs all these tools in
+    - Only needs R if you're doing computation with R
+    - ...
+
+## Slide 1: blah
+```{r}
+mydata <- data.frame(
+  x = 1:10,
+  y = (1:10)^2)
+
+ojs_define(mydata)
+```
+
+```{ojs}
+Reveal.on("stackslide", () => { console.log("Reached stackslide!"); } );
+Reveal.on("fragmentshown", e => { 
+  console.log("Reached fragment #" + e.fragment.attributes["data-fragment-index"].value);
+  console.log(e);} );
+```
+
+A very quiet slide
+
+## Slide 2: iframe background {auto-animate=true data-preload=true background-iframe="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50379.12545547731!2d145.06408939156861!3d-37.89080691987292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1649385361305!5m2!1sen!2sau"}
+
+And something else!
+
+## Slide 3: stack and "persistent" chart {data-state="stackslide"}
+
+::: {.columns}
+
+::: {.column width="60%"}
+```{ojs}
+someChart = Plot.barY(transpose(mydata), {x: "x", y: "y"}).plot({
+  width: 600,
+  height: 550,
+  style: {
+    background: "none",
+    fontFamily: "Source Serif Pro",
+    fontSize: 14
+  }});
+```
+:::
+
+::: {.column width="40%"}
+
+::: {.r-stack}
+
+::: {.fragment .fade-in-then-out data-fragment-index="1"}
+Here's one point...
+:::
+
+::: {.fragment .fade-in-then-out data-fragment-index="2"}
+And another...
+:::
+
+::: {.fragment .fade-in-then-out data-fragment-index="3"}
+... And something else!
+:::
+
+:::
+:::
+:::
+
+## Slide 4: some more stuff
+
+A loud slide with an R chart on it!
+
+```{r}
+library(ggplot2)
+ggplot(mydata) +
+  aes(x, y) +
+  geom_col() +
+  theme_minimal() +
+  theme(
+    plot.background = element_blank()
+  )
+```
+
+## Slide 5: big twist
+
+Can this button affect state?
+
+```{ojs}
+viewof backButton = Inputs.button("Return to slide 1",
+  {value: null, reduce: () => Reveal.slide(1) });
+```
+
+```{ojs}
+state = Reveal.getState();
+msg = html`You're currently on slide H: ${state.indexh}, V: ${state.indexV}, F: ${state.indexf}`
+```
+

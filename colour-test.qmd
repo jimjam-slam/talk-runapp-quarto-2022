@@ -1,0 +1,32 @@
+---
+title: "Colour test"
+author: "James Goldie"
+format:
+  revealjs: 
+    theme: [default, style.scss]
+---
+
+## Text wash styles {.text-wash-white}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+#### .text-wash-red {.text-wash-red}
+#### .text-wash-orange {.text-wash-orange}
+#### .text-wash-yellow {.text-wash-yellow}
+#### .text-wash-seafoam {.text-wash-seafoam}
+#### .text-wash-emerald {.text-wash-emerald}
+#### .text-wash-lightblue {.text-wash-lightblue}
+#### .text-wash-darkblue {.text-wash-darkblue}
+:::
+
+::: {.column width="50%"}
+#### .text-wash-indigo {.text-wash-indigo}
+#### .text-wash-purple {.text-wash-purple}
+#### .text-wash-pink {.text-wash-pink}
+#### .text-wash-brown {.text-wash-brown}
+#### .text-wash-white {.text-wash-white}
+#### .text-wash-black {.text-wash-black}
+:::
+
+::::
