@@ -39,7 +39,16 @@ $theme-black: #050505bb;
   padding: 30px;
 }
 
-/* blackboard fx inspo: https://graphicburger.com/chalkboard-typography-text-effects */
+// noise effect for text
+@mixin scratched($baseTurbFreq: 0.005, $turbOctaves: 1, $displaceScale: 5) {
+  filter: contrast(200%) url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="filter" x="-10%" y="-10%" width="120%" height="120%">\
+        <feTurbulence baseFrequency="#{$baseTurbFreq}" numOctaves="#{$turbOctaves}" result="turbulence" />\
+        <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="#{$displaceScale}" xChannelSelector="R" yChannelSelector="G"/>\
+      </filter>\
+    </svg>#filter');
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,17 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   h1, h2, h3, h4, h5, h6 {
-        
-    // noise effect for all headers
     background-image: url("/images/chalk2.jpg");
-    background-size: 200px;
+    background-size: 500px;
     -webkit-background-clip: text;
-    filter: contrast(200%) url('data:image/svg+xml,\
-      <svg xmlns="http://www.w3.org/2000/svg">\
-        <filter id="filter" x="-10%" y="-10%" width="120%" height="120%">\
-          <feTurbulence baseFrequency="0.005" numOctaves="1" result="turbulence" />\
-          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>\
-        </filter>\
-      </svg>#filter');
+    @include scratched();
   }
 }

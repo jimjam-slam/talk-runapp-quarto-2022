@@ -30,3 +30,7 @@ format:
 :::
 
 ::::
+
+## Coloured backgrounds {background-color="aquamarine"}
+
+### Here we are!
