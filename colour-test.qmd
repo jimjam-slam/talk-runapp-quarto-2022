@@ -4,6 +4,7 @@ author: "James Goldie"
 format:
   revealjs: 
     theme: [default, style.scss]
+    highlight-style: breezedark
 ---
 
 ## Text wash styles {.text-wash-white}
@@ -31,6 +32,30 @@ format:
 
 ::::
 
-## Coloured backgrounds {background-color="aquamarine"}
+## {.center}
 
-### Here we are!
+:::: {.columns}
+
+::: {.column width="40%"}
+
+### CODE {.r-fit-text .text-wash-yellow style="font-weight:900;"}
+### IS REALLY QUITE {.r-fit-text .text-wash-orange}
+### FUN {.r-fit-text .text-wash-red style="font-weight:900;"}
+
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%" style="margin-top:30px"}
+
+```r
+library(tidyverse)
+x <- letters[1:3]
+
+# or maybe this?
+paste(x, 1:3, sep = "/")
+```
+:::
+
+::::
