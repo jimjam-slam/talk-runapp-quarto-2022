@@ -2,16 +2,12 @@
 
 /*-- scss:defaults --*/
 
-// @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
-// @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap');
+@import url('/fonts/CascadiaCodePL.woff2');
 
 $font-family-sans-serif: "Inter", Helvetica, sans-serif !default;
-$font-family-monospace: "Fira Code", monospace !default;
+$font-family-monospace: "Cascadia Code PL", monospace !default;
 
 // $body-bg: hsl(176, 94%, 94%);
 $body-bg: black;
@@ -30,8 +26,10 @@ $theme-indigo: #4422ffaa;
 $theme-purple: #6611bbaa;
 $theme-pink: #ff0077aa;
 $theme-brown: #88440099;
-$theme-white: #ffffff99;
+$theme-white: #ffffff33;
 $theme-black: #050505bb;
+
+/*-- scss:rules --*/
 
 .boxcol {
   background-color: #000000cc;
@@ -93,5 +91,6 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 500px;
     -webkit-background-clip: text;
     @include scratched();
+    color: $theme-white;
   }
 }
