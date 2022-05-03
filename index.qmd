@@ -39,69 +39,57 @@ A very quiet slide
 
 And something else!
 
-## Slide 3: stack and "persistent" chart {data-state="stackslide"}
+## Demo: about us
 
-::: {.columns}
+Take the survey at <https://forms.gle/GtszJpXZYjppsQAz8>
 
-::: {.column width="60%"}
-```{ojs}
-someChart = Plot.barY(transpose(mydata), {x: "x", y: "y"}).plot({
-  width: 600,
-  height: 550,
-  style: {
-    background: "none",
-    fontFamily: "Source Serif Pro",
-    fontSize: 14
-  }});
-```
-:::
+## Results
 
-::: {.column width="40%"}
-
-::: {.r-stack}
-
-::: {.fragment .fade-in-then-out data-fragment-index="1"}
-Here's one point...
-:::
-
-::: {.fragment .fade-in-then-out data-fragment-index="2"}
-And another...
-:::
-
-::: {.fragment .fade-in-then-out data-fragment-index="3"}
-... And something else!
-:::
-
-:::
-:::
-:::
-
-## Slide 4: some more stuff
-
-A loud slide with an R chart on it!
-
-```{r}
-library(ggplot2)
-ggplot(mydata) +
-  aes(x, y) +
-  geom_col() +
-  theme_minimal() +
-  theme(
-    plot.background = element_blank()
-  )
-```
-
-## Slide 5: big twist
-
-Can this button affect state?
+<!-- https://docs.google.com/spreadsheets/d/e/2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/pub?gid=220798206&single=true&output=csv -->
 
 ```{ojs}
-viewof backButton = Inputs.button("Return to slide 1",
-  {value: null, reduce: () => Reveal.slide(1) });
+//| code-fold: true
+
+import { liveGoogleSheet } from "@jimjamslam/live-google-sheet";
+import { aq, op } from "@uwdata/arquero";
+
+surveyResults = liveGoogleSheet(
+  "2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw",
+  30000, 1, 2);
+
+respondentCount = surveyResults.length;
 ```
 
 ```{ojs}
-state = Reveal.getState();
-msg = html`You're currently on slide H: ${state.indexh}, V: ${state.indexV}, F: ${state.indexf}`
+md`We have ${respondentCount} respondents so far!`
 ```
 
+## Tidying
+
+```{ojs}
+
+// get the counts of people using and interested in tools
+countsUsed = aq.from(surveyResults)
+  .derive({
+    used: d => d.response_used.split(", ")
+  })
+  .select("used")
+  .view()
+  .unroll("used")
+  .rollup()
+  .view()
+
+countsWant = aq.from(surveyResults)
+  .derive({
+    want: d.response_want.split(", ")
+  })
+  .select("want")
+  .view()
+  .unroll("want")
+  .rollup()
+  .view()
+```
+
+## Results 2
+
+Let's visualise!
