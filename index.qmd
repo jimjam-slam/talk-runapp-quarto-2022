@@ -43,53 +43,102 @@ And something else!
 
 Take the survey at <https://forms.gle/GtszJpXZYjppsQAz8>
 
-## Results
+## Results {.text-wash-seafoam}
 
 <!-- https://docs.google.com/spreadsheets/d/e/2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/pub?gid=220798206&single=true&output=csv -->
 
 ```{ojs}
-//| code-fold: true
 
 import { liveGoogleSheet } from "@jimjamslam/live-google-sheet";
 import { aq, op } from "@uwdata/arquero";
 
 surveyResults = liveGoogleSheet(
-  "2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw",
+  "https://docs.google.com/spreadsheets/d/e/" +
+    "2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/" +
+    "pub?gid=1368316628&single=true&output=csv",
   30000, 1, 2);
 
 respondentCount = surveyResults.length;
 ```
 
 ```{ojs}
-md`We have ${respondentCount} respondents so far!`
+md`**Respondents:** ${respondentCount}`
 ```
 
-## Tidying
+:::: {.columns}
 
+::: {.column width="50%"}
 ```{ojs}
 
 // get the counts of people using and interested in tools
 countsUsed = aq.from(surveyResults)
-  .derive({
-    used: d => d.response_used.split(", ")
-  })
+  .derive({ used: d => op.split(d.responseUsed, ", ") })
   .select("used")
-  .view()
   .unroll("used")
-  .rollup()
-  .view()
+  .groupby("used")
+  .count()
 
-countsWant = aq.from(surveyResults)
-  .derive({
-    want: d.response_want.split(", ")
-  })
-  .select("want")
-  .view()
-  .unroll("want")
-  .rollup()
-  .view()
+countsUsed.view()
 ```
+:::
+::: {.column width="50%"}
+```{ojs}
+countsWant = aq.from(surveyResults)
+  .derive({ want: d => op.split(d.responseWant, ", ") })
+  .select("want")
+  .unroll("want")
+  .groupby("want")
+  .count()
 
-## Results 2
+countsWant.view()
+```
+:::
+
+::::
+
+## Results Vis {.text-wash-seafoam}
 
 Let's visualise!
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Used
+
+```{ojs}
+
+plotUsed = Plot.plot({
+  marks: [
+    Plot.barX(countsUsed.objects(), { y: "used", x: "count", fill: "used" })
+  ],
+  style: {
+    backgroundColor: "black",
+    color: "white"
+  }
+});
+```
+
+:::
+::: {.column width="50%"}
+
+
+### Want
+
+```{ojs}
+
+plotWant = Plot.plot({
+  marks: [
+    Plot.barX(countsWant.objects(), { y: "want", x: "count", fill: "want" })
+  ],
+  style: {
+    backgroundColor: "black",
+    color: "white"
+  }
+});
+```
+
+:::
+
+::::
+
