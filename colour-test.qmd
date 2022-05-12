@@ -1,11 +1,13 @@
 ---
-title: "Colour test"
-author: "James Goldie"
 format:
   revealjs: 
     theme: [default, style.scss]
     highlight-style: breezedark
 ---
+
+## Colour test {.text-wash-yellow}
+
+### James Goldie 
 
 ## Text wash styles {.text-wash-white}
 
@@ -59,3 +61,7 @@ paste(x, 1:3, sep = "/")
 :::
 
 ::::
+
+## Gradient test {.text-wash-black background="linear-gradient(#e6646599, #9198e533), url(/images/chalk2.jpg)"}
+
+### Look at all this! {.text-wash-black}
