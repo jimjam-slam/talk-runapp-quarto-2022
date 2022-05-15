@@ -18,39 +18,16 @@ format:
     - Only needs R if you're doing computation with R
     - ...
 
-## Slide 1: blah
-```{r}
-mydata <- data.frame(
-  x = 1:10,
-  y = (1:10)^2)
-
-ojs_define(mydata)
-```
-
-```{ojs}
-Reveal.on("stackslide", () => { console.log("Reached stackslide!"); } );
-Reveal.on("fragmentshown", e => { 
-  console.log("Reached fragment #" + e.fragment.attributes["data-fragment-index"].value);
-  console.log(e);} );
-```
-
-A very quiet slide
-
-
-And something else!
-
 ## Survey: what tools do you use?
 
 :::: {.columns}
-
-::: {.column width="50%"}
-Take the survey at <https://forms.gle/GtszJpXZYjppsQAz8>
+:::{.column width="40%"}
+![](./images/qrcode-survey.png){style="filter:invert(1)"}
 :::
 
-:::{.column width="50%" style="filter:invert(1)"}
-![](./images/qrcode-survey.png)
+::: {.column width="60%" .center}
+<br>Take the survey at **<https://forms.gle/GtszJpXZYjppsQAz8>**
 :::
-
 ::::
 
 ## {.text-wash-seafoam}
@@ -103,7 +80,8 @@ countsAll = [...countsUsed.objects(), ...countsWant.objects()];
 
 plotUsed = Plot.plot({
   marks: [
-    Plot.barX(countsAll, { y: "tool", x: "count", fill: "tool" })
+    Plot.barX(countsAll, { y: "tool", x: "count", fill: "tool" }),
+    Plot.ruleX([respondentCount])
   ],
   x : { label: "" },
   y : { label: "", tickSize: 0 },
@@ -118,3 +96,6 @@ plotUsed = Plot.plot({
   }
 });
 ```
+
+<!-- keep a qr code up in the top-right corner -->
+![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;"}
