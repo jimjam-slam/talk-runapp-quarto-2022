@@ -39,13 +39,25 @@ A very quiet slide
 
 And something else!
 
-## Demo: about us
+## Survey: what tools do you use?
 
+:::: {.columns}
+
+::: {.column width="50%"}
 Take the survey at <https://forms.gle/GtszJpXZYjppsQAz8>
+:::
 
-## Results {.text-wash-seafoam}
+:::{.column width="50%" style="filter:invert(1)"}
+![](./images/qrcode-survey.png)
+:::
 
-<!-- https://docs.google.com/spreadsheets/d/e/2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/pub?gid=220798206&single=true&output=csv -->
+::::
+
+## {.text-wash-seafoam}
+
+```{ojs}
+md`## Survey results (Respondents: ${respondentCount})`
+```
 
 ```{ojs}
 
@@ -61,9 +73,6 @@ surveyResults = liveGoogleSheet(
 respondentCount = surveyResults.length;
 ```
 
-:::: {.columns}
-
-::: {.column width="50%"}
 ```{ojs}
 
 // get the counts of people using and interested in tools
@@ -75,11 +84,8 @@ countsUsed = aq.from(surveyResults)
   .count()
   .derive({ measure: d => "Have used" })
   .rename({ used: "tool" })
-
-countsUsed.view()
 ```
-:::
-::: {.column width="50%"}
+
 ```{ojs}
 countsWant = aq.from(surveyResults)
   .derive({ want: d => op.split(d.responseWant, ", ") })
@@ -89,17 +95,6 @@ countsWant = aq.from(surveyResults)
   .count()
   .derive({ measure: d => "Want to learn" })
   .rename({ want: "tool" })
-
-countsWant.view()
-```
-:::
-
-::::
-
-## Results Vis {.text-wash-seafoam}
-
-```{ojs}
-md`**Respondents:** ${respondentCount}`
 ```
 
 ```{ojs}
@@ -108,17 +103,18 @@ countsAll = [...countsUsed.objects(), ...countsWant.objects()];
 
 plotUsed = Plot.plot({
   marks: [
-    Plot.barY(countsAll, { x: "tool", y: "count", fill: "tool" })
+    Plot.barX(countsAll, { y: "tool", x: "count", fill: "tool" })
   ],
   x : { label: "" },
-  y : { label: "" },
-  facet: { data: countsAll, y: "measure", label: "" },
+  y : { label: "", tickSize: 0 },
+  facet: { data: countsAll, x: "measure", label: "" },
+  marginLeft: 140,
   style: {
     backgroundColor: "black",
     color: "white",
     width: 1350,
     height: 500,
-    fontSize: 15
+    fontSize: 12,
   }
 });
 ```
