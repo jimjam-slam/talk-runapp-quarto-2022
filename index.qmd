@@ -4,6 +4,7 @@ author: "James Goldie"
 format:
   revealjs: 
     theme: [default, style.scss]
+    width: 1400
 ---
 
 ## Outline
@@ -60,10 +61,6 @@ surveyResults = liveGoogleSheet(
 respondentCount = surveyResults.length;
 ```
 
-```{ojs}
-md`**Respondents:** ${respondentCount}`
-```
-
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -76,6 +73,8 @@ countsUsed = aq.from(surveyResults)
   .unroll("used")
   .groupby("used")
   .count()
+  .derive({ measure: d => "Have used" })
+  .rename({ used: "tool" })
 
 countsUsed.view()
 ```
@@ -88,6 +87,8 @@ countsWant = aq.from(surveyResults)
   .unroll("want")
   .groupby("want")
   .count()
+  .derive({ measure: d => "Want to learn" })
+  .rename({ want: "tool" })
 
 countsWant.view()
 ```
@@ -97,47 +98,27 @@ countsWant.view()
 
 ## Results Vis {.text-wash-seafoam}
 
-Let's visualise!
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-### Used
+```{ojs}
+md`**Respondents:** ${respondentCount}`
+```
 
 ```{ojs}
+// combine the two counts into one dataset again
+countsAll = [...countsUsed.objects(), ...countsWant.objects()];
 
 plotUsed = Plot.plot({
   marks: [
-    Plot.barX(countsUsed.objects(), { y: "used", x: "count", fill: "used" })
+    Plot.barY(countsAll, { x: "tool", y: "count", fill: "tool" })
   ],
+  x : { label: "" },
+  y : { label: "" },
+  facet: { data: countsAll, y: "measure", label: "" },
   style: {
     backgroundColor: "black",
-    color: "white"
+    color: "white",
+    width: 1350,
+    height: 500,
+    fontSize: 15
   }
 });
 ```
-
-:::
-::: {.column width="50%"}
-
-
-### Want
-
-```{ojs}
-
-plotWant = Plot.plot({
-  marks: [
-    Plot.barX(countsWant.objects(), { y: "want", x: "count", fill: "want" })
-  ],
-  style: {
-    backgroundColor: "black",
-    color: "white"
-  }
-});
-```
-
-:::
-
-::::
-
