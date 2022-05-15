@@ -35,7 +35,6 @@ Reveal.on("fragmentshown", e => {
 
 A very quiet slide
 
-## Slide 2: iframe background {auto-animate=true data-preload=true background-iframe="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50379.12545547731!2d145.06408939156861!3d-37.89080691987292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1649385361305!5m2!1sen!2sau"}
 
 And something else!
 

@@ -5,9 +5,9 @@ format:
     highlight-style: breezedark
 ---
 
-## Colour test {.text-wash-yellow}
+## Colour tests {.text-wash-seafoam}
 
-### James Goldie 
+### James Goldie {.text-wash-white}
 
 ## Text wash styles {.text-wash-white}
 
@@ -55,13 +55,50 @@ format:
 library(tidyverse)
 x <- letters[1:3]
 
-# or maybe this?
+# especially when we do this!
 paste(x, 1:3, sep = "/")
 ```
 :::
 
 ::::
 
-## Gradient test {.text-wash-black background="linear-gradient(#e6646599, #9198e533), url(/images/chalk2.jpg)"}
-
 ### Look at all this! {.text-wash-black}
+
+## iframe + gradient background { background-iframe="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22650206.599839553!2d133.70003202574492!3d-27.12278300162101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sau!4v1652574469720!5m2!1sen!2sau" background-opacity="25%" background="linear-gradient(to right, #999900cc, #999900aa 45%, #17b2c388)" .background-iframe-interactive}
+
+Holy moly! You can apply a gradient background over an iframe! It can even be interactive if you add `.background-iframe-interactive` 🥳
+
+Can you do it with an image?
+
+## image + gradient background { .text-wash-black background-image="https://images.unsplash.com/photo-1652439578449-ea69ceb8e89d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=963&q=80" background-opacity="25%" background="linear-gradient(to right, #999900cc, #999900aa 45%, #17b2c388)"}
+
+Yep! That's it! Specify:
+
+* Either `background-iframe` or `background-image`
+* A `background-opacity` less than 100%, which will apply to the above
+* Use `background` to specify a gradient or `background-color` to specify a colour. These will go underneath.
+
+## Gradient: { background-image="https://images.unsplash.com/photo-1652439578449-ea69ceb8e89d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=963&q=80" background-opacity="50%" background="linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) 55%, rgba(0, 0, 0, 0) 55%)" background-color="white"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### sidebar effect
+
+You can use `linear-gradient` backgrounds to make a "sidebar" effect, which is especially nice if you have columns specified too.
+
+Just be mindful of your default `background-color`!
+:::
+
+::: {.column width="15%"}
+:::
+
+::: {.column width="35%"}
+Note that:
+* It also might not scale wqell to different aspect ratios. I prefer the faded gradient overlay tbh.
+* Revealjs sets your text colour as light or dark based on the background _colour_. If your sidebar is mucking with that, like here, it might choose incorrectly.
+:::
+
+::::
+
+
