@@ -7,7 +7,40 @@ format:
     width: 1400
 ---
 
+# Introduction {.text-wash-black background="aquamarine"}
+
+## Today {.text-wash-yellow}
+
+:::: {.columns}
+::: {.column width="50%"}
+1. **Who I am**
+  - My background
+2. **What are reproducible reports?**
+  - R Markdown
+  - Notebooks (eg. Jupyter)
+  - Survey time!
+3. **What's Quarto?**
+  - How it works
+:::
+::: {.column width="50%"}
+4. **Advantage A: it brings the ecosystem together**
+  - Languages
+  - RMarkdown extensions
+  - Future ecosystem? Extensibility?
+5. **Advantage B: reactivity**
+  - Problem: Having things change as you read (not just when I render)
+  - The crappy way: event listeners
+  - Existing models of reactivity: Shiny and Dash
+    - Downside: need a server running!
+  - Quarto and Observable
+:::
+::::
+
 ## Outline
+
+```{r}
+ggplot2::ggplot()
+```
 
 - What is Quarto?
   - How it builds on RMarkdown
