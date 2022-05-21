@@ -9,7 +9,7 @@ format:
       - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css
 ---
 
-## Today {.text-wash-yellow}
+## Today
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -36,13 +36,17 @@ format:
 :::
 ::::
 
-# Introduction {.text-wash-black background="aquamarine"}
+# I'm James {.text-wash-black background="aquamarine"}
 
-## I'm James
+## {.text-wash-seafoam}
+
+::: {.notes}
+Blah
+:::
 
 ::::: {.columns style="text-align:center;margin-top:50px;"}
 
-:::: {.column width="50%"}
+:::: {.column width="50%" style="margin-top:50px"}
 ::: {.r-stack}
 ![](images/gradloopinf.gif){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);"}
 
@@ -56,63 +60,27 @@ format:
 
 ![](images/360logo.png){.fragment fragment-index=6 style="width:85%"}
 :::
-
 ::::
 
-:::: {.column width="50%"}
-
+:::: {.column width="50%"  style="margin-top:25px"}
 ::: {.fragment fragment-index=1}
 I used to be a climate + health researcher 
 :::
-
 ::: {.fragment fragment-index=2}
-Worked at **[monash.edu/mcccrh](https://monash.edu/mcccrh)** on climate change communication
-:::
+•
 
+Worked with **[CLEX](https://climateextremes.org.au)** and **[MCCCRH](https://monash.edu/mcccrh)** on climate change communication
+:::
 ::: {.fragment fragment-index=6}
+•
+
 Now a data journalist with **[360info.org](https://360info.org)!**
 :::
-
 ::::
-
-
-<!-- ::: {.column width="25%"}
-<i class="bi bi-alarm-fill" style="font-size:5rem;"></i>
-
-Former climate + health researcher
-:::
-::: {.column width="25%"}
-More interested in visualising data
-:::
-::: {.column width="25%"}
-Worked at MCCCRH to help Australians understand climat change
-:::
-::: {.column width="25%"}
-Now at 360info
-::: -->
 
 :::::
 
-::: {.notes}
-Blah
-:::
-
-## Outline
-
-```{r}
-ggplot2::ggplot()
-```
-
-- What is Quarto?
-  - How it builds on RMarkdown
-    - RMarkdown/Knitr ecosystem, extensions, other languages
-    - Extensibility! 🎉
-    - But also: fragmentation,which  and heavy reliance on R
-  - Quarto packs all these tools in
-    - Only needs R if you're doing computation with R
-    - ...
-
-## Survey: what tools do you use?
+## Poll: what tools do you use? {.text-wash-seafoam}
 
 :::: {.columns}
 :::{.column width="40%"}
@@ -127,7 +95,7 @@ ggplot2::ggplot()
 ## {.text-wash-seafoam}
 
 ```{ojs}
-md`## Survey results (Respondents: ${respondentCount})`
+md`## Poll results (Respondents: ${respondentCount})`
 ```
 
 ```{ojs}
@@ -145,7 +113,6 @@ respondentCount = surveyResults.length;
 ```
 
 ```{ojs}
-
 // get the counts of people using and interested in tools
 countsUsed = aq.from(surveyResults)
   .derive({ used: d => op.split(d.responseUsed, ", ") })
@@ -193,3 +160,116 @@ plotUsed = Plot.plot({
 
 <!-- keep a qr code up in the top-right corner -->
 ![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;"}
+
+# What are <br><span style="background:orange;padding-inline:20px;">reproducible reports?</span> {.text-wash-black background="goldenrod"}
+
+## {background-image="images/confused-dog.jpg"}
+
+::: {.notes}
+If you work in Python or Julia, you may have heard of **notebooks**
+
+R users might have heard of **reproducible reports**
+
+All examples of **literate programming**
+
+Literate programming is about _explaining your code_ by combining code with written prose and graphics
+:::
+
+##
+
+::: {.notes}
+Very nice to read!
+
+Readable even if you didn't write it
+
+File format is opaque and hard to version control
+
+Files shared or hosted on special notebook services
+:::
+
+:::: {.columns}
+::: {.column width="50%" style="margin-top:30px;"}
+### Notebooks {.text-wash-yellow}
+
+* Contain:
+  - Writing
+  - Code
+  - **Results in the file too**
+
+:::
+::: {.column width="50%"}
+
+![](images/notebook.png)
+:::
+::::
+
+## Reproducible reports {.text-wash-yellow}
+
+::: {.notes}
+R Markdown is more common among R users
+
+Contains writing and code, but not results!
+
+An R Markdown document is _rendered_. The final report is a separate file!
+
+Plain text
+
+Easy to see changes over time in version control
+
+Need R to run it
+:::
+
+:::: {.columns}
+::: {.column width="40%"}
+![](images/rmd-source.png)
+:::
+::: {.column width="20%"}
+➡️
+:::
+::: {.column width="40%"}
+![](images/rmd-render.png)
+:::
+::::
+
+## <span class="background:orange;padding-inline:20px;">Quarto:<span> literate programming for everyone {.text-wash-yellow}
+
+::: {.notes}
+These two approaches have pros and cons
+
+Quarto lets us have our cake and eat it too!
+
+(dot points)
+
+Quarto can accomodate just about any workflow
+:::
+
+* Write in a **notebook** `.ipynb` or in a **document** `.qmd`
+* Use **any language** in either format
+* No need to install programming languages if you aren't using them
+* Write in **R Studio**, **VS Code** or **Jupyter Lab**
+  - Render in any of these, or in the shell:
+* Make HTML documents, PDFs, Word documents, websites, Powerpoint presentations...
+- These slides use Quarto and **[Reveal.js](https://revealjs.com)**!
+
+(editor logos here)
+
+## The best of the RMarkdown ecosystem {.text-wash-yellow}
+
+(rmarkdown stickers here)
+
+<!-- ## OLD Outline {.text-wash-yellow}
+
+
+```{r}
+ggplot2::ggplot()
+```
+
+- What is Quarto?
+  - How it builds on RMarkdown
+    - RMarkdown/Knitr ecosystem, extensions, other languages
+    - Extensibility! 🎉
+    - But also: fragmentation,which  and heavy reliance on R
+  - Quarto packs all these tools in
+    - Only needs R if you're doing computation with R
+    - ... -->
+
