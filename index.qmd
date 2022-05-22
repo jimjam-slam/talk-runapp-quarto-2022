@@ -48,17 +48,17 @@ Blah
 
 :::: {.column width="50%" style="margin-top:50px"}
 ::: {.r-stack}
-![](images/gradloopinf.gif){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);"}
+![](images/gradloopinf.gif){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="A picture of me and my PhD supervisor, Lisa Alexander, at my graduation."}
 
-![](images/mcccrh-zoom.png){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);"}
+![](images/mcccrh-zoom.png){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="A picture of me and MCCCRH staff members on Zoom."}
 
-![](images/mcccrh.gif){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);"}
+![](images/mcccrh.gif){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="A picture of me and MCCCRH staff members on a work trip."}
 
-![](images/mcccrh-projections.jpg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);"}
+![](images/mcccrh-projections.jpg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg); fig-alt="A picture of Graham Creed from the ABC presenting climate projections."}
 
-![](images/mcccrh-7news.gif){.fragment .fade-in-then-semi-out fragment-index=5 style="transform:rotate(-3.5deg);"}
+![](images/mcccrh-7news.gif){.fragment .fade-in-then-semi-out fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="A picture of Jane Bunn presenting statistics on shrinking winters."}
 
-![](images/360logo.png){.fragment fragment-index=6 style="width:85%"}
+![](images/360logo.png){.fragment fragment-index=6 style="width:85%" fig-alt="The 360info logo."}
 :::
 ::::
 
@@ -84,7 +84,7 @@ Now a data journalist with **[360info.org](https://360info.org)!**
 
 :::: {.columns}
 :::{.column width="40%"}
-![](./images/qrcode-survey.png){style="filter:invert(1)"}
+![](./images/qrcode-survey.png){style="filter:invert(1)" fig-alt="A QR code for the survey."}
 :::
 
 ::: {.column width="60%" .center}
@@ -159,7 +159,7 @@ plotUsed = Plot.plot({
 ```
 
 <!-- keep a qr code up in the top-right corner -->
-![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;"}
+![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;" fig-alt="A picture of a QR code to the survey."}
 
 # What are <br><span style="background:orange;padding-inline:20px;">reproducible reports?</span> {.text-wash-black background="goldenrod"}
 
@@ -194,44 +194,52 @@ Files shared or hosted on special notebook services
 * Contain:
   - Writing
   - Code
-  - **Results in the file too**
+  - <span style="color:gold;">**Results in the file too**</span>
 
 :::
 ::: {.column width="50%"}
 
-![](images/notebook.png)
+![](images/notebook.png){fig-alt="A picture of a Jupyter notebook loaded into Visual Studio Code."}
 :::
 ::::
 
 ## Reproducible reports {.text-wash-yellow}
 
+Source **documents** are **rendered** to produce **results**
+
 ::: {.notes}
 R Markdown is more common among R users
+
+Instead of code and results together, we _render_ a source document
 
 Contains writing and code, but not results!
 
 An R Markdown document is _rendered_. The final report is a separate file!
 
-Plain text
+Plain text source file
 
 Easy to see changes over time in version control
+
+Docs, books, websites, presentations...
 
 Need R to run it
 :::
 
 :::: {.columns}
-::: {.column width="40%"}
-![](images/rmd-source.png)
+::: {.column width="50%"}
+![](images/rmd-source.png){fig-alt="An R Markdown source document in a plain text code editor"}
 :::
-::: {.column width="20%"}
-➡️
-:::
-::: {.column width="40%"}
-![](images/rmd-render.png)
+<!-- ::: {.column width="20%"}
+ 
+::: -->
+::: {.column width="50%"}
+![](images/rmd-render.png){fig-alt="An R Markdown document rendered into HTML with a plot in it."}
 :::
 ::::
 
-## <span class="background:orange;padding-inline:20px;">Quarto:<span> literate programming for everyone {.text-wash-yellow}
+# Quarto:<br><span style="font-size:75%;">Literate programming for <span style="background:#8a35de;padding-inline:20px;">everyone</span><span> { background="#7609e3"}
+
+## Notebooks or documents: your choice {.text-wash-indigo background="white"}
 
 ::: {.notes}
 These two approaches have pros and cons
@@ -243,19 +251,29 @@ Quarto lets us have our cake and eat it too!
 Quarto can accomodate just about any workflow
 :::
 
-* Write in a **notebook** `.ipynb` or in a **document** `.qmd`
+![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
+
+<!-- * Write in a **notebook** `.ipynb` or in a **document** `.qmd`
 * Use **any language** in either format
 * No need to install programming languages if you aren't using them
 * Write in **R Studio**, **VS Code** or **Jupyter Lab**
   - Render in any of these, or in the shell:
 * Make HTML documents, PDFs, Word documents, websites, Powerpoint presentations...
-- These slides use Quarto and **[Reveal.js](https://revealjs.com)**!
+- These slides use Quarto and **[Reveal.js](https://revealjs.com)**! -->
 
-(editor logos here)
+## The RMarkdown ecosystem {.text-wash-yellow}
 
-## The best of the RMarkdown ecosystem {.text-wash-yellow}
+::: {.notes}
+Because R Markdown gets rendered, it can make lots of different kinds of documents!
+:::
 
-(rmarkdown stickers here)
+::: {style="text-align:center;margin-top:175px;"}
+
+Packages for just about every kind of document:
+
+[`xaringan`](https://github.com/yihui/xaringan) • [`distill`](https://rstudio.github.io/distill) • [`blogdown`](https://bookdown.org/yihui/blogdown) • [`hugodown`](https://github.com/r-lib/hugodown) • [`bookdown`](https://bookdown.org) • [`thesisdown`](https://github.com/ismayc/thesisdown) • [`oxforddown`](https://ulyngs.github.io/oxforddown) • [`unswthesisdown`](https://github.com/jimjam-slam/unswthesisdown) • [`pagedown`](https://github.com/rstudio/pagedown) • [`flexdashboard`](https://pkgs.rstudio.com/flexdashboard/) • [`rmdformats`](https://github.com/juba/rmdformats) • [`rticles`](https://github.com/rstudio/rticles) • [`prettydoc`](https://prettydoc.statr.me/) • [`markdowntemplates`](https://github.com/hrbrmstr/markdowntemplates)  • and more...
+:::
+
 
 <!-- ## OLD Outline {.text-wash-yellow}
 
