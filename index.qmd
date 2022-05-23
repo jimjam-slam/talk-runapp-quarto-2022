@@ -9,7 +9,7 @@ format:
       - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css
 ---
 
-## Today
+## Today {style="text-align: center;"}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -80,7 +80,7 @@ Now a data journalist with **[360info.org](https://360info.org)!**
 
 :::::
 
-## Poll: what tools do you use? {.text-wash-seafoam}
+## Poll: what tools do you use? {.text-wash-seafoam style="text-align: center;"}
 
 :::: {.columns}
 :::{.column width="40%"}
@@ -92,7 +92,7 @@ Now a data journalist with **[360info.org](https://360info.org)!**
 :::
 ::::
 
-## {.text-wash-seafoam}
+## {.text-wash-seafoam style="text-align: center;"}
 
 ```{ojs}
 md`## Poll results (Respondents: ${respondentCount})`
@@ -161,7 +161,7 @@ plotUsed = Plot.plot({
 <!-- keep a qr code up in the top-right corner -->
 ![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;" fig-alt="A picture of a QR code to the survey."}
 
-# What are <br><span style="background:orange;padding-inline:20px;">reproducible reports?</span> {.text-wash-black background="goldenrod"}
+# What are <br>[reproducible reports?]{.hl .hl-gold} {.text-wash-black background="goldenrod"}
 
 ## {background-image="images/confused-dog.jpg"}
 
@@ -189,7 +189,7 @@ Files shared or hosted on special notebook services
 
 :::: {.columns}
 ::: {.column width="50%" style="margin-top:30px;"}
-### Notebooks {.text-wash-yellow}
+<h2 class="text-wash-yellow">Notebooks</h2>
 
 * Contain:
   - Writing
@@ -203,7 +203,7 @@ Files shared or hosted on special notebook services
 :::
 ::::
 
-## Reproducible reports {.text-wash-yellow}
+## Reproducible reports {.text-wash-yellow style="text-align:center"}
 
 Source **documents** are **rendered** to produce **results**
 
@@ -237,30 +237,6 @@ Need R to run it
 :::
 ::::
 
-# Quarto:<br><span style="font-size:75%;">Literate programming for <span style="background:#8a35de;padding-inline:20px;">everyone</span><span> { background="#7609e3"}
-
-## Notebooks or documents: your choice {.text-wash-indigo background="white"}
-
-::: {.notes}
-These two approaches have pros and cons
-
-Quarto lets us have our cake and eat it too!
-
-(dot points)
-
-Quarto can accomodate just about any workflow
-:::
-
-![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
-
-<!-- * Write in a **notebook** `.ipynb` or in a **document** `.qmd`
-* Use **any language** in either format
-* No need to install programming languages if you aren't using them
-* Write in **R Studio**, **VS Code** or **Jupyter Lab**
-  - Render in any of these, or in the shell:
-* Make HTML documents, PDFs, Word documents, websites, Powerpoint presentations...
-- These slides use Quarto and **[Reveal.js](https://revealjs.com)**! -->
-
 ## The RMarkdown ecosystem {.text-wash-yellow}
 
 ::: {.notes}
@@ -269,25 +245,280 @@ Because R Markdown gets rendered, it can make lots of different kinds of documen
 
 ::: {style="text-align:center;margin-top:175px;"}
 
-Packages for just about every kind of document:
+R packages for just about every kind of document:
 
-[`xaringan`](https://github.com/yihui/xaringan) • [`distill`](https://rstudio.github.io/distill) • [`blogdown`](https://bookdown.org/yihui/blogdown) • [`hugodown`](https://github.com/r-lib/hugodown) • [`bookdown`](https://bookdown.org) • [`thesisdown`](https://github.com/ismayc/thesisdown) • [`oxforddown`](https://ulyngs.github.io/oxforddown) • [`unswthesisdown`](https://github.com/jimjam-slam/unswthesisdown) • [`pagedown`](https://github.com/rstudio/pagedown) • [`flexdashboard`](https://pkgs.rstudio.com/flexdashboard/) • [`rmdformats`](https://github.com/juba/rmdformats) • [`rticles`](https://github.com/rstudio/rticles) • [`prettydoc`](https://prettydoc.statr.me/) • [`markdowntemplates`](https://github.com/hrbrmstr/markdowntemplates)  • and more...
+[`xaringan`](https://github.com/yihui/xaringan) • [`distill`](https://rstudio.github.io/distill) • [`blogdown`](https://bookdown.org/yihui/blogdown) • [`hugodown`](https://github.com/r-lib/hugodown) • [`bookdown`](https://bookdown.org) • [`thesisdown`](https://github.com/ismayc/thesisdown) • [`oxforddown`](https://ulyngs.github.io/oxforddown) • [`unswthesisdown`](https://github.com/jimjam-slam/unswthesisdown) • [`pagedown`](https://github.com/rstudio/pagedown) • [`flexdashboard`](https://pkgs.rstudio.com/flexdashboard/) • [`rmdformats`](https://github.com/juba/rmdformats) • [`rticles`](https://github.com/rstudio/rticles) • [`prettydoc`](https://prettydoc.statr.me/) • [`markdowntemplates`](https://github.com/hrbrmstr/markdowntemplates) • and more...
 :::
 
+# Quarto:<br>[Literate programming for[everyone]{.hl .hl-purple}]{style="font-size:75%;"} { background="#7609e3"}
 
-<!-- ## OLD Outline {.text-wash-yellow}
+::: {.notes}
+So we have two very different approaches to explaining your data.
 
+Notebooks are a really nice writing experience, and it's good to have code and results in one place.
 
-```{r}
-ggplot2::ggplot()
+But they're difficult to share or collaborate on without dedicated services.
+
+RMarkdown docs have a massive ecosystem for lots of different outputs, and they're very clear and easy to share. But not everyone uses R!
+
+Quarto tries to have its cake and eat it too.
+:::
+
+## Notebooks or documents: your choice {.text-wash-indigo background="white" style="text-align:center"}
+
+::: {.notes}
+You don't have to choose between writing in notebooks or documents - they both work!
+
+Here we have a Quarto report, written two different ways: a notebook and a document.
+
+Either of these can be rendered - into a webpage, a blog post, a slideshow, a Word document, a PDF...
+
+If you're used to documents, Quarto ones look almost the same!
+
+We still have _chunk options_ (cell options for notebook people). They sit as special comments at the start of the cell, and they're written in YAML. You can add them to notebook cells too!
+
+(The old RMarkdown way still works.)
+
+Frontmatter still works largely the same as RMarkdown, but you can add it to notebooks too!
+:::
+
+![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
+
+## R, Python, Julia: your choice {.text-wash-indigo background="white" style="text-align:center"}
+
+::: {.notes}
+The other big change here is that you can use your **favourite language** in **either format.**
+
+You can write Python chunks in a document like the one on the right, and you can render it **without needing to have R installed.**
+
+On the flip side, you can write R cells in a notebook. Or Julia. **Or all three!**
+
+Quarto is a **separate tool** that runs in the shell. It comes with everything you need, except the programming languages you want to use.
+:::
+
+![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
+
+## Your choice of editor {.text-wash-indigo background="white" style="text-align: center"}
+
+::: {.notes}
+The examples I've shown are in Visual Studio Code, which is a code editor that I love.
+
+Quarto works really nicely there. It even has a help panel that switches languages as you type!
+
+Quarto also works fantastically with the JupyterLab editor and with RStudio.
+:::
+
+:::: {.columns style="margin-top:150px;"}
+::: {.column width="33%"}
+[![](images/editor-vscode.png){fig-alt="Visual Studio Code logo" width="250px"}](https://code.visualstudio.com)
+:::
+::: {.column width="33%"}
+[![](images/editor-rstudio.png){fig-alt="RStudio logo" width="250px"}](https://rstudio.com)
+:::
+::: {.column width="33%"}
+[![](images/editor-jupyterlab.png){fig-alt="Jupyter logo" width="250px"}](https://jupyterlab.readthedocs.io/en/stable)
+:::
+::::
+
+## RStudio visual editor {.text-wash-indigo background="white" style="text-align: center"}
+
+::: {.notes}
+If you use RStudio and you're used to writing documents but like the way notebooks look, you don't even have to choose!
+
+RStudio has a **notebook-style editor** _for documents_.
+
+You can switch back and forth as you like, and it has a command palette to help you insert things.
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+![](images/rstudio-source.png){fig-alt="Editing a Quarto document in RStudio in the plain text view."}
+:::
+::: {.column width="50%"}
+![](images/rstudio-visual.png){fig-alt="Editing a Quarto document in RStudio in the visual editor"}"}
+:::
+::::
+
+## (point about cross-tech) {.text-wash-indigo background="white" style="text-align: center"}
+
+::: {.notes}
+R Markdown has been able to include code from other languages for a while, but I think this is a really big step to facilitating cross-language collaboration.
+
+For someone who only works in Python or Julia, it's a really tough sell to ask them to install R and several packages in order to write documents.
+
+With Quarto, you can have a website with people contributing posts as a mix of notebooks and documents in any (or all languages).
+:::
+
+(slide content here)
+
+# Spicing up Quarto<br>[with [reactivity]{.hl .hl-red} and [Observable JS]{.hl .hl-red}]{style="font-size:75%;"} { background="#e31a1c"}
+
+::: {.notes}
+
+:::
+
+##
+
+::: {.notes}
+(notes here)
+:::
+
+::: {style="margin-top:-100px"}
+### Reactivity? {.r-fit-text .text-wash-orange}
+
+### HUH? {.r-fit-text .text-wash-red style="font-weight:900"}
+:::
+
+## Reactivity is... {.text-wash-red}
+
+::: {.notes}
+So when we render our document, code runs and it changes how the report looks.
+
+Maybe it creates a plot from some data, or prints some statistics.
+
+But sometimes we want the document change **as it's being read.**
+:::
+
+## Code is usually about [doing things]{.hl .hl-red} {.text-wash-red .center style="text-align:center"} 
+
+::: {.notes}
+Programs and websites do this all the time! There's a user interface with buttons and dials and sliders, and when we play with them, stuff happens.
+
+But making that happen can be really tiring.
+
+Web and app developers deal with this all the time:
+
+* write code to create the button
+* then write code to check its value all the time
+* then write code to do things every time it changes
+
+That's powerful, but it gets old really quickly!
+:::
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+::: {.incremental}
+* Write code to **create a control**
+* Write code to **check its value all the time**
+* Write code to **do things every time it changes**
+* Write code to **pass updates from one thing to another**
+:::
+::::
+
+:::: {.column width="50%"}
+::: {.fragment}
+
+<h2 class="text-wash-orange">This gets old quickly!</h2>
+
+### 😩 {style="font-size:600%"}
+
+:::
+::::
+
+:::::
+
+## Reactive code just updates itself {.text-wash-red .center style="text-align:center"}
+
+::: {.fragment}
+Describe a control or input 
+:::
+
+::: {.fragment}
+Describe an output that **reacts** to the control's changes
+:::
+ 
+::: {.fragment}
+... there is no step 3
+
+<span style="font-size:smaller">(the output takes care of itself!)</span>
+:::
+
+## Example: footy scores {.text-wash-red style="text-align:center" background="white"}
+
+Example: **menu** + **slider** => **chart of footy scores**
+
+```{ojs}
+//| echo: false
+// scores = await aq.loadCSV("data/footy-scores.csv")
+scores = FileAttachment("data/footy-scores.csv").csv({ typed: true })
+
+viewof footyTeam = Inputs.select(
+  ["Pies", "Blues", "Bombers", "Cats"],
+  { value: "Blues", label: "Footy team" })
+
+viewof year = Inputs.range([1990, 2005], { value: 1990, label: "Year" })
+
+filteredScores = scores.filter(d => d.team == footyTeam && d.year == year)
+
+Plot.plot({
+  marks: [
+    Plot.barY(filteredScores, { x: "game", y: "score" }),
+    Plot.ruleY(0)
+  ],
+  x: { label: "Game number" },
+  y: { label: "Score" }
+})
 ```
 
-- What is Quarto?
-  - How it builds on RMarkdown
-    - RMarkdown/Knitr ecosystem, extensions, other languages
-    - Extensibility! 🎉
-    - But also: fragmentation,which  and heavy reliance on R
-  - Quarto packs all these tools in
-    - Only needs R if you're doing computation with R
-    - ... -->
+## This is how [Shiny]{.hl .hl-red} and [Dash]{.hl .hl-red} work! {.text-wash-red style="text-align:center"}
 
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+::: {.fragment}
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "|6,11,13"
+
+# describe some controls - a dropdown menu
+# and a slider - and a plot
+
+ui <- fluidPage(
+
+  selectInput("footyTeam",
+    label = "Footy team",
+    choices = c("Pies", "Blues",
+      "Bombers", "Cats"),
+    selected = "Blues"),
+  sliderInput("year", label = "Year",
+    1990, 2005, value = 1991),
+  plotOutput("footyScores")
+  
+)
+```
+:::
+::::
+:::: {.column width="50%"}
+::: {.fragment}
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "|8,9,10"
+# for the plot, filter our data and
+# draw a line chart
+
+server <- function(input, out) {
+  output$footyScores <- renderPlot({
+
+    scores %>%
+    filter(
+      year == input$year,
+      house == input$footyTeam) %>%
+    {
+      ggplot(.) +
+        aes(x = game, y = score) +
+        geom_line()
+    }
+    
+  })}
+```
+:::
+::::
+:::::
+
+## This is how [Shiny]{.hl .hl-red} and [Dash]{.hl .hl-red} work! {.text-wash-red style="text-align:center"}
+
+Shiny already works with R Markdown, and it works with Quarto too

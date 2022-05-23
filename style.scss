@@ -98,4 +98,28 @@ h1, h2, h3, h4, h5, h6 {
   ol, ul {
     display: block;
   }
+
+  // override reveal.js progress colours (naughty!)
+  .progress {
+    color: transparent !important;
+
+    span {
+      background: linear-gradient(45deg, red, gold);
+    }
+  }
+
+  .slide-menu-button a {
+    color: #000000aa;
+  }
+}
+
+.hl {
+  padding-inline: 1rem;
+  margin-inline: 1rem; 
+  background: #99999966;
+
+  &-purple { background: #8a35de; }
+  &-red    { background: #b1002655; }
+  &-orange { background: #b1002655; }
+  &-gold   { background: orange; }
 }
