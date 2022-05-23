@@ -1,5 +1,7 @@
 project:
   output-dir: out
+  pre-render: quidditch-scores.r
   resources:
     - "images"
     - "fonts"
+    - "data"
