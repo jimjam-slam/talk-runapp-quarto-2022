@@ -1,6 +1,4 @@
 ---
-title: "Runapp talk"
-author: "James Goldie"
 format:
   revealjs: 
     theme: [default, style.scss]
@@ -9,7 +7,19 @@ format:
       - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css
 ---
 
-## Today {.center style="text-align: center;"}
+## {.center background="white"}
+
+<h1 class="text-indigo-pink">Quarto<h1>
+
+<h2>Create beautiful documents with R, Python, Julia and Observable</h2>
+
+::: {style="margin-top:50px"}
+### JAMES GOLDIE {.text-orange-gold}
+
+Data and Digital Storytelling Lead, 360info
+:::
+
+## Today {.center style="text-align: center;" background="white"}
 
 1. Hello!
 2. What are reproducible reports?
@@ -22,7 +32,7 @@ format:
 ## {.text-lime-cyan}
 
 ::: {.notes}
-Blah
+(click)
 :::
 
 ::::: {.columns style="text-align:center;margin-top:50px;"}
