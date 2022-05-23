@@ -9,36 +9,17 @@ format:
       - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css
 ---
 
-## Today {style="text-align: center;"}
+## Today {.center style="text-align: center;"}
 
-:::: {.columns}
-::: {.column width="50%"}
-1. **Who I am**
-  - My background
-2. **What are reproducible reports?**
-  - R Markdown
-  - Notebooks (eg. Jupyter)
-  - Survey time!
-3. **What's Quarto?**
-  - How it works
-4. **Advantage A: it brings the ecosystem together**
-  - Languages
-  - RMarkdown extensions
-  - Future ecosystem? Extensibility?
-:::
-::: {.column width="50%"}
-5. **Advantage B: reactivity**
-  - Problem: Having things change as you read (not just when I render)
-  - The crappy way: event listeners
-  - Existing models of reactivity: Shiny and Dash
-    - Downside: need a server running!
-  - Quarto and Observable
-:::
-::::
+1. Hello!
+2. What are reproducible reports?
+3. What's Quarto? Why can anyone use it?
+4. Web content
 
-# I'm James {.text-wash-black background="aquamarine"}
 
-## {.text-wash-seafoam}
+# Hi! {.text-wash-black background="linear-gradient(45deg, cyan, lime)"}
+
+## {.text-lime-cyan}
 
 ::: {.notes}
 Blah
@@ -48,17 +29,17 @@ Blah
 
 :::: {.column width="50%" style="margin-top:50px"}
 ::: {.r-stack}
-![](images/gradloopinf.gif){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="A picture of me and my PhD supervisor, Lisa Alexander, at my graduation."}
+![](images/graduation.gif){.fragment .fade-in-then-semi-out fragment-index=1 style="width:70%;transform:rotate(-5deg);" fig-alt="A picture of me and my PhD supervisor, Lisa Alexander, at my graduation."}
 
 ![](images/mcccrh-zoom.png){.fragment .fade-in-then-semi-out fragment-index=2 style="transform:rotate(5deg);" fig-alt="A picture of me and MCCCRH staff members on Zoom."}
 
 ![](images/mcccrh.gif){.fragment .fade-in-then-semi-out fragment-index=3 style="transform:rotate(-1deg);" fig-alt="A picture of me and MCCCRH staff members on a work trip."}
 
-![](images/mcccrh-projections.jpg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg); fig-alt="A picture of Graham Creed from the ABC presenting climate projections."}
+![](images/mcccrh-projections.jpg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="A picture of Graham Creed from the ABC presenting climate projections."}
 
-![](images/mcccrh-7news.gif){.fragment .fade-in-then-semi-out fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="A picture of Jane Bunn presenting statistics on shrinking winters."}
+![](images/mcccrh-7news.gif){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="A picture of Jane Bunn presenting statistics on shrinking winters."}
 
-![](images/360logo.png){.fragment fragment-index=6 style="width:85%" fig-alt="The 360info logo."}
+<!-- ![](images/360logo.png){.fragment fragment-index=6 style="width:85%" fig-alt="The 360info logo."} -->
 :::
 ::::
 
@@ -74,13 +55,17 @@ Worked with **[CLEX](https://climateextremes.org.au)** and **[MCCCRH](https://mo
 ::: {.fragment fragment-index=6}
 •
 
-Now a data journalist with **[360info.org](https://360info.org)!**
+<!-- Now a data journalist with **[360info.org](https://360info.org)!** -->
+
+Now I'm a data journalist with
+
+[![](images/360logo.svg){style="width:50%;"}](https://360info.org)
 :::
 ::::
 
 :::::
 
-## Poll: what tools do you use? {.text-wash-seafoam style="text-align: center;"}
+## Poll: what tools do you use? {.text-lime-cyan style="text-align: center;"}
 
 :::: {.columns}
 :::{.column width="40%"}
@@ -88,11 +73,11 @@ Now a data journalist with **[360info.org](https://360info.org)!**
 :::
 
 ::: {.column width="60%" .center}
-<br>Take the survey at **<https://forms.gle/GtszJpXZYjppsQAz8>**
+<br>Take the survey at **<https://forms.gle/EdADv8GvDxUrrRmy8>**
 :::
 ::::
 
-## {.text-wash-seafoam style="text-align: center;"}
+## {.text-lime-cyan style="text-align: center;"}
 
 ```{ojs}
 md`## Poll results (Respondents: ${respondentCount})`
@@ -161,7 +146,7 @@ plotUsed = Plot.plot({
 <!-- keep a qr code up in the top-right corner -->
 ![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;" fig-alt="A picture of a QR code to the survey."}
 
-# What are <br>[reproducible reports?]{.hl .hl-gold} {.text-wash-black background="goldenrod"}
+# What are <br>[reproducible reports?]{.hl .hl-gold} {.text-wash-black background="linear-gradient(45deg, #f37335, #fdc830)"}
 
 ## {background-image="images/confused-dog.jpg"}
 
@@ -189,7 +174,7 @@ Files shared or hosted on special notebook services
 
 :::: {.columns}
 ::: {.column width="50%" style="margin-top:30px;"}
-<h2 class="text-wash-yellow">Notebooks</h2>
+<h2 class="text-orange-gold">Notebooks</h2>
 
 * Contain:
   - Writing
@@ -203,7 +188,7 @@ Files shared or hosted on special notebook services
 :::
 ::::
 
-## Reproducible reports {.text-wash-yellow style="text-align:center"}
+## Reproducible reports {.text-orange-gold style="text-align:center"}
 
 Source **documents** are **rendered** to produce **results**
 
@@ -237,7 +222,7 @@ Need R to run it
 :::
 ::::
 
-## The RMarkdown ecosystem {.text-wash-yellow}
+## The RMarkdown ecosystem {.text-orange-gold}
 
 ::: {.notes}
 Because R Markdown gets rendered, it can make lots of different kinds of documents!
@@ -250,7 +235,7 @@ R packages for just about every kind of document:
 [`xaringan`](https://github.com/yihui/xaringan) • [`distill`](https://rstudio.github.io/distill) • [`blogdown`](https://bookdown.org/yihui/blogdown) • [`hugodown`](https://github.com/r-lib/hugodown) • [`bookdown`](https://bookdown.org) • [`thesisdown`](https://github.com/ismayc/thesisdown) • [`oxforddown`](https://ulyngs.github.io/oxforddown) • [`unswthesisdown`](https://github.com/jimjam-slam/unswthesisdown) • [`pagedown`](https://github.com/rstudio/pagedown) • [`flexdashboard`](https://pkgs.rstudio.com/flexdashboard/) • [`rmdformats`](https://github.com/juba/rmdformats) • [`rticles`](https://github.com/rstudio/rticles) • [`prettydoc`](https://prettydoc.statr.me/) • [`markdowntemplates`](https://github.com/hrbrmstr/markdowntemplates) • and more...
 :::
 
-# Quarto:<br>[Literate programming for[everyone]{.hl .hl-purple}]{style="font-size:75%;"} { background="#7609e3"}
+# Quarto:<br>[Literate programming for[everyone]{.hl .hl-purple}]{style="font-size:75%;"} { background="linear-gradient(45deg, #4a00e0, #ff0099)"}
 
 ::: {.notes}
 So we have two very different approaches to explaining your data.
@@ -264,7 +249,7 @@ RMarkdown docs have a massive ecosystem for lots of different outputs, and they'
 Quarto tries to have its cake and eat it too.
 :::
 
-## Notebooks or documents: your choice {.text-wash-indigo background="white" style="text-align:center"}
+## Notebooks or documents: your choice {.text-indigo-pink background="white" style="text-align:center"}
 
 ::: {.notes}
 You don't have to choose between writing in notebooks or documents - they both work!
@@ -284,7 +269,7 @@ Frontmatter still works largely the same as RMarkdown, but you can add it to not
 
 ![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
 
-## R, Python, Julia: your choice {.text-wash-indigo background="white" style="text-align:center"}
+## R, Python, Julia: your choice {.text-indigo-pink background="white" style="text-align:center"}
 
 ::: {.notes}
 The other big change here is that you can use your **favourite language** in **either format.**
@@ -298,7 +283,7 @@ Quarto is a **separate tool** that runs in the shell. It comes with everything y
 
 ![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
 
-## Your choice of editor {.text-wash-indigo background="white" style="text-align: center"}
+## Your choice of editor {.text-indigo-pink background="white" style="text-align: center"}
 
 ::: {.notes}
 The examples I've shown are in Visual Studio Code, which is a code editor that I love.
@@ -320,7 +305,7 @@ Quarto also works fantastically with the JupyterLab editor and with RStudio.
 :::
 ::::
 
-## RStudio visual editor {.text-wash-indigo background="white" style="text-align: center"}
+## RStudio visual editor {.text-indigo-pink background="white" style="text-align: center"}
 
 ::: {.notes}
 If you use RStudio and you're used to writing documents but like the way notebooks look, you don't even have to choose!
@@ -328,6 +313,12 @@ If you use RStudio and you're used to writing documents but like the way noteboo
 RStudio has a **notebook-style editor** _for documents_.
 
 You can switch back and forth as you like, and it has a command palette to help you insert things.
+
+R Markdown has been able to include code from other languages for a while, but I think this is a really big step to facilitating cross-language collaboration.
+
+For someone who only works in Python or Julia, it's a really tough sell to ask them to install R and several packages in order to write documents.
+
+With Quarto, you can have a website with people contributing posts as a mix of notebooks and documents in any (or all languages).
 :::
 
 :::: {.columns}
@@ -339,47 +330,92 @@ You can switch back and forth as you like, and it has a command palette to help 
 :::
 ::::
 
-## (point about cross-tech) {.text-wash-indigo background="white" style="text-align: center"}
+
+# Spicing up Quarto<br>[with [reactivity]{.hl .hl-red} and [Observable JS]{.hl .hl-red}]{style="font-size:75%;"} { background="linear-gradient(45deg, #ed213a, #93291e)"}
 
 ::: {.notes}
-R Markdown has been able to include code from other languages for a while, but I think this is a really big step to facilitating cross-language collaboration.
+Quarto has one other big feature that I think we need to talk about
 
-For someone who only works in Python or Julia, it's a really tough sell to ask them to install R and several packages in order to write documents.
-
-With Quarto, you can have a website with people contributing posts as a mix of notebooks and documents in any (or all languages).
-:::
-
-(slide content here)
-
-# Spicing up Quarto<br>[with [reactivity]{.hl .hl-red} and [Observable JS]{.hl .hl-red}]{style="font-size:75%;"} { background="#e31a1c"}
-
-::: {.notes}
-
+It's called **Observable JS**, and it can make your reports, your books and your slides **reactive**.
 :::
 
 ##
-
-::: {.notes}
-(notes here)
-:::
-
-::: {style="margin-top:-100px"}
-### Reactivity? {.r-fit-text .text-wash-orange}
-
-### HUH? {.r-fit-text .text-wash-red style="font-weight:900"}
-:::
-
-## Reactivity is... {.text-wash-red}
 
 ::: {.notes}
 So when we render our document, code runs and it changes how the report looks.
 
 Maybe it creates a plot from some data, or prints some statistics.
 
-But sometimes we want the document change **as it's being read.**
+But sometimes we want our document to change **as it's being read.**
+
+We want to let users to make decisions and for the document to **react** to things changing.
 :::
 
-## Code is usually about [doing things]{.hl .hl-red} {.text-wash-red .center style="text-align:center"} 
+::: {style="margin-top:-100px"}
+### Reactivity? {.r-fit-text .text-orange-gold}
+
+### HUH? {.r-fit-text .text-red-brown style="font-weight:900"}
+:::
+
+## Example: footy scores {.text-red-brown .center .smaller style="text-align:center"}
+
+::: {.notes}
+So let's say we had data on footy scores for different teams over a number of years.
+
+We could try to make one graphic that shows all the data, but it's a lot!
+
+And maybe different readers care about different teams.
+
+We can let our chart **react** to the decisions our users make about footy team and year.
+
+:::
+
+**menu** + **slider** => **chart of footy scores**
+
+::::: {.columns .fragment}
+:::: {.column width="40%"}
+::: {style="color:black"}
+```{ojs}
+//| echo: false
+
+viewof footyTeam = Inputs.select(
+  ["Pies", "Blues", "Bombers", "Cats"],
+  { value: "Blues", label: "Footy team" })
+
+viewof year = Inputs.range([1990, 2005],
+  { value: 1990, step: 1, label: "Year", width: 300 })
+```
+:::
+::::
+:::: {.column width="60%"}
+```{ojs}
+//| echo: false
+
+scores = FileAttachment("data/footy-scores.csv").csv({ typed: true })
+filteredScores = scores.filter(d => d.team == footyTeam && d.year == year)
+
+Plot.plot({
+  marks: [
+    Plot.barY(filteredScores, { x: "game", y: "score", fill: "game" })
+  ],
+  x: { label: "Game number", labelOffset: 70 },
+  y: { label: "Score" },
+  width: 800,
+  height: 500,
+  marginLeft: 60,
+  marginBottom: 90,
+  marginTop: 60,
+  style: {
+    backgroundColor: "black",
+    color: "white",
+    fontSize: 24
+  }
+})
+```
+::::
+:::::
+
+## Code is usually about [doing things]{.hl .hl-red} {.text-red-brown .center style="text-align:center"} 
 
 ::: {.notes}
 Programs and websites do this all the time! There's a user interface with buttons and dials and sliders, and when we play with them, stuff happens.
@@ -409,7 +445,7 @@ That's powerful, but it gets old really quickly!
 :::: {.column width="50%"}
 ::: {.fragment}
 
-<h2 class="text-wash-orange">This gets old quickly!</h2>
+<h2 class="text-orange-gold">This gets old quickly!</h2>
 
 ### 😩 {style="font-size:600%"}
 
@@ -418,7 +454,7 @@ That's powerful, but it gets old really quickly!
 
 :::::
 
-## Reactive code just updates itself {.text-wash-red .center style="text-align:center"}
+## Reactive code just updates itself {.text-red-brown .center style="text-align:center"}
 
 ::: {.fragment}
 Describe a control or input 
@@ -434,35 +470,9 @@ Describe an output that **reacts** to the control's changes
 <span style="font-size:smaller">(the output takes care of itself!)</span>
 :::
 
-## Example: footy scores {.text-wash-red style="text-align:center" background="white"}
+## This is how [Shiny]{.hl .hl-red} and [Dash]{.hl .hl-red} work! {.text-red-brown style="text-align:center"}
 
-Example: **menu** + **slider** => **chart of footy scores**
-
-```{ojs}
-//| echo: false
-// scores = await aq.loadCSV("data/footy-scores.csv")
-scores = FileAttachment("data/footy-scores.csv").csv({ typed: true })
-
-viewof footyTeam = Inputs.select(
-  ["Pies", "Blues", "Bombers", "Cats"],
-  { value: "Blues", label: "Footy team" })
-
-viewof year = Inputs.range([1990, 2005], { value: 1990, label: "Year" })
-
-filteredScores = scores.filter(d => d.team == footyTeam && d.year == year)
-
-Plot.plot({
-  marks: [
-    Plot.barY(filteredScores, { x: "game", y: "score" }),
-    Plot.ruleY(0)
-  ],
-  x: { label: "Game number" },
-  y: { label: "Score" }
-})
-```
-
-## This is how [Shiny]{.hl .hl-red} and [Dash]{.hl .hl-red} work! {.text-wash-red style="text-align:center"}
-
+**menu** + **slider** => **chart of footy scores**
 
 ::::: {.columns}
 
@@ -519,6 +529,221 @@ server <- function(input, out) {
 ::::
 :::::
 
-## This is how [Shiny]{.hl .hl-red} and [Dash]{.hl .hl-red} work! {.text-wash-red style="text-align:center"}
+## So why not use [Shiny?]{.hl .hl-red} {.text-red-brown .center style="text-align:center"}
 
-Shiny already works with R Markdown, and it works with Quarto too
+::: {.notes}
+(ref. slides)
+
+Services like **shinyapps.io** serve websites to people, but they leave a copy of R running to allow things to react like this
+:::
+
+[Shiny already works with R Markdown, and it works with Quarto too]{.fragment}
+
+[But you need R running to react to things **as people read the document**, not just when you render it]{.fragment}
+
+[This requires a special web server! (eg. [shinyapps.io](https://shinyapps.io))]{.fragment}
+
+## So why not use [Shiny?]{.hl .hl-red} {.text-red-brown .center style="text-align:center"}
+
+::: {.notes}
+(ref. slides)
+
+My use is different to many of yours!
+
+If you want to make something to be used internally, or by special stakeholders, Shiny is great!
+:::
+
+In media, charts could be viewed 100k+ times in days
+
+[(If I'm lucky...)]{style="font-size:smaller"}
+
+I can't afford a Shiny server for that kind of traffic!
+
+## Enter [Observable JS]{.hl .hl-red} {.text-red-brown .center}
+
+Quarto gives us a new kind of code chunk called [**OJS**]{.hl .hl-red}
+
+It lets us write JavaScript that is **naturally reactive**
+
+## Observable JS: no server required {.text-red-brown .center}
+
+::::: {.columns}
+:::: {.column width="50%"}
+
+::: {.fragment}
+We make a slider called `x`...
+
+::: {style="color: black"}
+```{ojs}
+//| echo: true
+viewof x = Inputs.range(
+  [0, 100],
+  {step: 1, label: ""})
+```
+:::
+:::
+::::
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+... and then reference it in some text!
+
+```{ojs}
+//| echo: true
+md`The square of ${x} is ${x**2}!
+  How about that!`
+```
+:::
+::: {.fragment}
+
+The text **reacts** to the changing value of `x`. Nice!
+
+:::
+::::
+
+:::::
+
+## {.text-red-brown .center}
+
+::: {.notes}
+This is really powerful. If we don't need a special server to make charts that react to users, they can be as popular as we like!
+
+I can put Quarto documents on GitHub Pages, Netlify, or even Cloudflare Pages, which has **unlimited bandwidth**.
+:::
+
+::::: {.columns}
+:::: {.column width="45%"}
+### Quarto + {.r-fit-text}
+### OJS means {.r-fit-text}
+::::
+:::: {.column width="10%"}
+::::
+
+:::: {.column width="45%"}
+::: {.incremental}
+* You can do your data analysis in R, Python or Julia
+* You can make visuals that **react to users**
+* You don't need to worry about the cost if it gets popular
+* Learning JavaScript is as easy as possible
+:::
+::::
+:::::
+
+## {.text-red-brown}
+
+::::: {.columns}
+:::: {.column width="50%"}
+### R/Python Widgets
+
+"Web content" in R Markdown usually involves a special R or Python package (eg. [`htmlwidgets`](https://htmlwidgets.org))
+
+👍 Convenient
+
+👎 Customising means learning JavaScript _and_ learning how an R package works
+::::
+:::: {.column width="50%"}
+### Quarto + OJS
+
+It's just JavaScript!
+
+You get great libraries bundled in to try out JS:
+
+  * Observable Plot for making charts
+  * Observable Inputs for making controls
+  * Arquero for data analysis (it's just like `dplyr`)
+  
+::::
+:::::
+
+## Seriously, _just_ like `dplyr`, I'm not even kidding {.text-red-brown .center}
+
+::: {.notes}
+Remember our survey before? That was doing data analysis on-the-fly with Arquero.
+
+(click)
+
+These are basically `dplyr` or `pandas` verbs!
+:::
+
+::::: {.columns}
+:::: {.column width="40%"}
+Remember the survey before?
+
+I did that with **Observable Plot** and **Arquero**.
+
+Here's the code I used to tally up survey responses:
+::::
+:::: {.column width="60%"}
+::: {.fragment}
+```{ojs}
+//| eval: false
+//| echo: true
+countsUsed = aq.from(surveyResults)
+  .derive({ used: d => op.split(d.responseUsed, ", ") })
+  .select("used")
+  .unroll("used")
+  .groupby("used")
+  .count()
+  .derive({ measure: d => "Have used" })
+  .rename({ used: "tool" })
+```
+:::
+::::
+:::::
+
+## Use the whole web {.text-red-brown}
+
+::: {.notes}
+And when you're ready, you can use any other JavaScript library
+
+(click to see)
+
+This was a chart we built recently showing that many commercial satellites are used by governments and the military too.
+
+(click to Italy)
+
+This uses the `d3-euler` library, as well as a popup library called `micromodal`.
+
+There's a lot we could do to improve this, but the actual JavaScript being used here would look very familar to an R or Python user!
+
+This isn't much more complex than the dropdown menu and footy score chart 
+:::
+
+::: {.fragment}
+
+<iframe src="https://360info-satellitemixeduse.pages.dev/embed-user-overlaps" height="600" width="1400" style="background:white"></iframe>
+
+:::
+
+# Conclusions {.text-black-white background="linear-gradient(45deg, #fff, #666)"}
+
+## Quarto helps you write documents... {.center background="white"}
+
+... whether you use **R**, **Python** or **Julia**
+
+... whether you like **notebooks** or **documents**
+
+... whether you write in a **code editor** or a **notebook editor**
+
+## Quarto help you make documents that react to users {.center background="white"}
+
+... and you might learn JavaScript by accident!
+
+## A checklist for trying Quarto {.center background="white"}
+
+🔴 Download Quarto from [quarto.org](https://quarto.org)
+
+🟠 Try to render an existing R Markdown document or Jupyter notebook using Quarto and your favourite editor
+
+🟢 Switch out one of your charts for an [Observable Plot](https://observablehq.com/@observablehq/plot) chart
+
+🔵 Try switching some `dplyr` or `pandas` verbs for some [Arquero verbs](https://observablehq.com/@uwdata/introducing-arquero)
+
+🟣 Try adding something to your document by importing an [Observable notebook](https://quarto.org/docs/interactive/ojs/libraries.html) or a [JavaScript library](https://quarto.org/docs/interactive/ojs/libraries.html)
+
+# Thanks for listening!
+
+Questions?
+
+[**twitter: @jimjam-slam**](https://twitter.com/jimjam-slam)

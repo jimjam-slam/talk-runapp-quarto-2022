@@ -26,8 +26,8 @@ $theme-indigo: #4422ffaa;
 $theme-purple: #6611bbaa;
 $theme-pink: #ff0077aa;
 $theme-brown: #88440099;
-$theme-white: #ffffff33;
-$theme-black: #050505bb;
+$theme-white: #ffffff;
+$theme-black: #050505;
 
 /*-- scss:rules --*/
 
@@ -64,6 +64,37 @@ h1, h2, h3, h4, h5, h6 {
   .reveal .text-wash-brown & { color: $theme-brown }
   .reveal .text-wash-black & { color: $theme-black }
   .reveal .text-wash-white & { color: $theme-white }
+
+  .reveal .text-lime-cyan & {
+    background: linear-gradient(45deg, cyan, lime);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .reveal .text-orange-gold & {
+    background: linear-gradient(45deg, #f37335, #fdc830);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .reveal .text-indigo-pink & {
+    background: linear-gradient(45deg, #4a00e0, #ff0099);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .reveal .text-red-brown & {
+    background: linear-gradient(45deg, #ed213a, #93291e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .reveal .text-black-white & {
+    background: linear-gradient(45deg, #333, #ccc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .reveal {
@@ -83,15 +114,46 @@ h1, h2, h3, h4, h5, h6 {
       &.text-wash-brown { color: $theme-brown }
       &.text-wash-black { color: $theme-black }
       &.text-wash-white { color: $theme-white }
+
+      &.text-lime-cyan {
+        background: linear-gradient(45deg, cyan, lime);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      &.text-orange-gold {
+        background: linear-gradient(45deg, #f37335, #fdc830);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      &.text-indigo-pink {
+        background: linear-gradient(45deg, #4a00e0, #ff0099);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      &.text-red-brown {
+        background: linear-gradient(45deg, #ed213a, #93291e);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      &.text-black-white {
+        background: linear-gradient(45deg, #333, #ccc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
     }
   }
 
   h1, h2, h3, h4, h5, h6 {
-    background-image: url("/images/chalk2.jpg");
-    background-size: 500px;
-    -webkit-background-clip: text;
+    // background-image: url("/images/chalk2.jpg");
+    // background-size: 500px;
     @include scratched();
-    color: $theme-white;
+    // color: $theme-white;
   }
 
   // weird that they're inline-block by default?
@@ -118,8 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-inline: 1rem; 
   background: #99999966;
 
-  &-purple { background: #8a35de; }
+  &-purple { background: #6a159e; }
   &-red    { background: #b1002655; }
-  &-orange { background: #b1002655; }
   &-gold   { background: orange; }
 }
