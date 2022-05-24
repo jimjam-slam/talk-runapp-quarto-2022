@@ -60,7 +60,7 @@ These two things give Quarto a really strong basis for helping data scientists l
 
 [**https://runapp2022.talks.jamesgoldie.dev**](https://runapp2022.talks.jamesgoldie.dev)
 
-[(or [**https://preeminent-tulumba-f666d5.netlify.app**](https://preeminent-tulumba-f666d5.netlify.app))]{style="font-size:1rem"}
+[(Code for these slides is at [**https://github.com/jimjam-slam/talk-runapp-quarto-2022**](https://github.com/jimjam-slam/talk-runapp-quarto-2022))]{style="font-size:1.2rem"}
 :::
 
 # Hi! {.text-wash-black background="linear-gradient(45deg, #00aadd, #66dd00)"}
@@ -97,8 +97,6 @@ As our team grows, I'm doing some of everything:
 ![](images/mcccrh-projections.jpg){.fragment .fade-in-then-semi-out fragment-index=4 style="transform:rotate(1.5deg);" fig-alt="A picture of Graham Creed from the ABC presenting climate projections."}
 
 ![](images/mcccrh-7news.gif){.fragment .fade-in fragment-index=5 style="transform:rotate(-3.5deg);" fig-alt="A picture of Jane Bunn presenting statistics on shrinking winters."}
-
-<!-- ![](images/360logo.png){.fragment fragment-index=6 style="width:85%" fig-alt="The 360info logo."} -->
 :::
 ::::
 

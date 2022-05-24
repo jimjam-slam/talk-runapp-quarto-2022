@@ -445,7 +445,7 @@ Create beautiful documents with R, Python, Julia and Observable
 <section id="slides" style="margin-top:50px">
 <h3>Slides</h3>
 <p><a href="https://runapp2022.talks.jamesgoldie.dev"><strong>https://runapp2022.talks.jamesgoldie.dev</strong></a></p>
-<p><span style="font-size:1rem">(or <a href="https://preeminent-tulumba-f666d5.netlify.app"><strong>https://preeminent-tulumba-f666d5.netlify.app</strong></a>)</span></p>
+<p><span style="font-size:1.2rem">(Code for these slides is at <a href="https://github.com/jimjam-slam/talk-runapp-quarto-2022"><strong>https://github.com/jimjam-slam/talk-runapp-quarto-2022</strong></a>)</span></p>
 </section>
 </section>
 <section>
@@ -485,7 +485,6 @@ Create beautiful documents with R, Python, Julia and Observable
 <p><img data-src="images/mcccrh.gif" class="fragment fade-in-then-semi-out" data-fragment-index="3" style="transform:rotate(-1deg);" alt="A picture of me and MCCCRH staff members on a work trip."></p>
 <p><img data-src="images/mcccrh-projections.jpg" class="fragment fade-in-then-semi-out" data-fragment-index="4" style="transform:rotate(1.5deg);" alt="A picture of Graham Creed from the ABC presenting climate projections."></p>
 <p><img data-src="images/mcccrh-7news.gif" class="fragment fade-in" data-fragment-index="5" style="transform:rotate(-3.5deg);" alt="A picture of Jane Bunn presenting statistics on shrinking winters."></p>
-<!-- ![](images/360logo.png){.fragment fragment-index=6 style="width:85%" fig-alt="The 360info logo."} -->
 </div>
 </div><div class="column" style="margin-top:25px">
 <div class="fragment" data-fragment-index="1">
@@ -542,7 +541,7 @@ Create beautiful documents with R, Python, Julia and Observable
 <section id="section-2" class="slide level2 text-lime-cyan" style="text-align: center;">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="156" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 155;"><span id="cb1-156"><a href="#cb1-156"></a><span class="fu">md</span><span class="vs">`## Poll results (Respondents: </span><span class="sc">${</span>respondentCount<span class="sc">}</span><span class="vs">)`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="154" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 153;"><span id="cb1-154"><a href="#cb1-154"></a><span class="fu">md</span><span class="vs">`## Poll results (Respondents: </span><span class="sc">${</span>respondentCount<span class="sc">}</span><span class="vs">)`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="expression">
 
@@ -550,16 +549,16 @@ Create beautiful documents with R, Python, Julia and Observable
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="162" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 161;"><span id="cb2-162"><a href="#cb2-162"></a><span class="im">import</span> { liveGoogleSheet } <span class="im">from</span> <span class="st">"@jimjamslam/live-google-sheet"</span><span class="op">;</span></span>
-<span id="cb2-163"><a href="#cb2-163"></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">"@uwdata/arquero"</span><span class="op">;</span></span>
-<span id="cb2-164"><a href="#cb2-164"></a></span>
-<span id="cb2-165"><a href="#cb2-165"></a>surveyResults <span class="op">=</span> <span class="fu">liveGoogleSheet</span>(</span>
-<span id="cb2-166"><a href="#cb2-166"></a>  <span class="st">"https://docs.google.com/spreadsheets/d/e/"</span> <span class="op">+</span></span>
-<span id="cb2-167"><a href="#cb2-167"></a>    <span class="st">"2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/"</span> <span class="op">+</span></span>
-<span id="cb2-168"><a href="#cb2-168"></a>    <span class="st">"pub?gid=1368316628&amp;single=true&amp;output=csv"</span><span class="op">,</span></span>
-<span id="cb2-169"><a href="#cb2-169"></a>  <span class="dv">15000</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
-<span id="cb2-170"><a href="#cb2-170"></a></span>
-<span id="cb2-171"><a href="#cb2-171"></a>respondentCount <span class="op">=</span> surveyResults<span class="op">.</span><span class="at">length</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="160" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 159;"><span id="cb2-160"><a href="#cb2-160"></a><span class="im">import</span> { liveGoogleSheet } <span class="im">from</span> <span class="st">"@jimjamslam/live-google-sheet"</span><span class="op">;</span></span>
+<span id="cb2-161"><a href="#cb2-161"></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">"@uwdata/arquero"</span><span class="op">;</span></span>
+<span id="cb2-162"><a href="#cb2-162"></a></span>
+<span id="cb2-163"><a href="#cb2-163"></a>surveyResults <span class="op">=</span> <span class="fu">liveGoogleSheet</span>(</span>
+<span id="cb2-164"><a href="#cb2-164"></a>  <span class="st">"https://docs.google.com/spreadsheets/d/e/"</span> <span class="op">+</span></span>
+<span id="cb2-165"><a href="#cb2-165"></a>    <span class="st">"2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/"</span> <span class="op">+</span></span>
+<span id="cb2-166"><a href="#cb2-166"></a>    <span class="st">"pub?gid=1368316628&amp;single=true&amp;output=csv"</span><span class="op">,</span></span>
+<span id="cb2-167"><a href="#cb2-167"></a>  <span class="dv">15000</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb2-168"><a href="#cb2-168"></a></span>
+<span id="cb2-169"><a href="#cb2-169"></a>respondentCount <span class="op">=</span> surveyResults<span class="op">.</span><span class="at">length</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -590,15 +589,15 @@ Create beautiful documents with R, Python, Julia and Observable
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="174" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 173;"><span id="cb3-174"><a href="#cb3-174"></a><span class="co">// get the counts of people using and interested in tools</span></span>
-<span id="cb3-175"><a href="#cb3-175"></a>countsUsed <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
-<span id="cb3-176"><a href="#cb3-176"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">used</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseUsed</span><span class="op">,</span> <span class="st">", "</span>) })</span>
-<span id="cb3-177"><a href="#cb3-177"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"used"</span>)</span>
-<span id="cb3-178"><a href="#cb3-178"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"used"</span>)</span>
-<span id="cb3-179"><a href="#cb3-179"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"used"</span>)</span>
-<span id="cb3-180"><a href="#cb3-180"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
-<span id="cb3-181"><a href="#cb3-181"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Have used"</span> })</span>
-<span id="cb3-182"><a href="#cb3-182"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">used</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="172" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 171;"><span id="cb3-172"><a href="#cb3-172"></a><span class="co">// get the counts of people using and interested in tools</span></span>
+<span id="cb3-173"><a href="#cb3-173"></a>countsUsed <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
+<span id="cb3-174"><a href="#cb3-174"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">used</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseUsed</span><span class="op">,</span> <span class="st">", "</span>) })</span>
+<span id="cb3-175"><a href="#cb3-175"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"used"</span>)</span>
+<span id="cb3-176"><a href="#cb3-176"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"used"</span>)</span>
+<span id="cb3-177"><a href="#cb3-177"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"used"</span>)</span>
+<span id="cb3-178"><a href="#cb3-178"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
+<span id="cb3-179"><a href="#cb3-179"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Have used"</span> })</span>
+<span id="cb3-180"><a href="#cb3-180"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">used</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
 
@@ -606,14 +605,14 @@ Create beautiful documents with R, Python, Julia and Observable
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="186" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 185;"><span id="cb4-186"><a href="#cb4-186"></a>countsWant <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
-<span id="cb4-187"><a href="#cb4-187"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">want</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseWant</span><span class="op">,</span> <span class="st">", "</span>) })</span>
-<span id="cb4-188"><a href="#cb4-188"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"want"</span>)</span>
-<span id="cb4-189"><a href="#cb4-189"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"want"</span>)</span>
-<span id="cb4-190"><a href="#cb4-190"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"want"</span>)</span>
-<span id="cb4-191"><a href="#cb4-191"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
-<span id="cb4-192"><a href="#cb4-192"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Want to learn"</span> })</span>
-<span id="cb4-193"><a href="#cb4-193"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">want</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="184" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 183;"><span id="cb4-184"><a href="#cb4-184"></a>countsWant <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
+<span id="cb4-185"><a href="#cb4-185"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">want</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseWant</span><span class="op">,</span> <span class="st">", "</span>) })</span>
+<span id="cb4-186"><a href="#cb4-186"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"want"</span>)</span>
+<span id="cb4-187"><a href="#cb4-187"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"want"</span>)</span>
+<span id="cb4-188"><a href="#cb4-188"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"want"</span>)</span>
+<span id="cb4-189"><a href="#cb4-189"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
+<span id="cb4-190"><a href="#cb4-190"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Want to learn"</span> })</span>
+<span id="cb4-191"><a href="#cb4-191"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">want</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
@@ -621,23 +620,23 @@ Create beautiful documents with R, Python, Julia and Observable
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="199" data-source-offset="-49"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 198;"><span id="cb5-199"><a href="#cb5-199"></a>countsAll <span class="op">=</span> [<span class="op">...</span>countsUsed<span class="op">.</span><span class="fu">objects</span>()<span class="op">,</span> <span class="op">...</span>countsWant<span class="op">.</span><span class="fu">objects</span>()]<span class="op">;</span></span>
-<span id="cb5-200"><a href="#cb5-200"></a></span>
-<span id="cb5-201"><a href="#cb5-201"></a>plotUsed <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb5-202"><a href="#cb5-202"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb5-203"><a href="#cb5-203"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(countsAll<span class="op">,</span> { <span class="dt">y</span><span class="op">:</span> <span class="st">"tool"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"count"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"tool"</span> })<span class="op">,</span></span>
-<span id="cb5-204"><a href="#cb5-204"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([respondentCount]<span class="op">,</span> { <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ffffff99"</span> })</span>
-<span id="cb5-205"><a href="#cb5-205"></a>  ]<span class="op">,</span></span>
-<span id="cb5-206"><a href="#cb5-206"></a>  <span class="dt">x</span> <span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">""</span> }<span class="op">,</span></span>
-<span id="cb5-207"><a href="#cb5-207"></a>  <span class="dt">y</span> <span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span> <span class="dt">tickSize</span><span class="op">:</span> <span class="dv">0</span> }<span class="op">,</span></span>
-<span id="cb5-208"><a href="#cb5-208"></a>  <span class="dt">facet</span><span class="op">:</span> { <span class="dt">data</span><span class="op">:</span> countsAll<span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"measure"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">""</span> }<span class="op">,</span></span>
-<span id="cb5-209"><a href="#cb5-209"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">140</span><span class="op">,</span></span>
-<span id="cb5-210"><a href="#cb5-210"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
-<span id="cb5-211"><a href="#cb5-211"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">1350</span><span class="op">,</span></span>
-<span id="cb5-212"><a href="#cb5-212"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb5-213"><a href="#cb5-213"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span></span>
-<span id="cb5-214"><a href="#cb5-214"></a>  }</span>
-<span id="cb5-215"><a href="#cb5-215"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="197" data-source-offset="-49"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 196;"><span id="cb5-197"><a href="#cb5-197"></a>countsAll <span class="op">=</span> [<span class="op">...</span>countsUsed<span class="op">.</span><span class="fu">objects</span>()<span class="op">,</span> <span class="op">...</span>countsWant<span class="op">.</span><span class="fu">objects</span>()]<span class="op">;</span></span>
+<span id="cb5-198"><a href="#cb5-198"></a></span>
+<span id="cb5-199"><a href="#cb5-199"></a>plotUsed <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-200"><a href="#cb5-200"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-201"><a href="#cb5-201"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(countsAll<span class="op">,</span> { <span class="dt">y</span><span class="op">:</span> <span class="st">"tool"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"count"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"tool"</span> })<span class="op">,</span></span>
+<span id="cb5-202"><a href="#cb5-202"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([respondentCount]<span class="op">,</span> { <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ffffff99"</span> })</span>
+<span id="cb5-203"><a href="#cb5-203"></a>  ]<span class="op">,</span></span>
+<span id="cb5-204"><a href="#cb5-204"></a>  <span class="dt">x</span> <span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">""</span> }<span class="op">,</span></span>
+<span id="cb5-205"><a href="#cb5-205"></a>  <span class="dt">y</span> <span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span> <span class="dt">tickSize</span><span class="op">:</span> <span class="dv">0</span> }<span class="op">,</span></span>
+<span id="cb5-206"><a href="#cb5-206"></a>  <span class="dt">facet</span><span class="op">:</span> { <span class="dt">data</span><span class="op">:</span> countsAll<span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"measure"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">""</span> }<span class="op">,</span></span>
+<span id="cb5-207"><a href="#cb5-207"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">140</span><span class="op">,</span></span>
+<span id="cb5-208"><a href="#cb5-208"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb5-209"><a href="#cb5-209"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">1350</span><span class="op">,</span></span>
+<span id="cb5-210"><a href="#cb5-210"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb5-211"><a href="#cb5-211"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span></span>
+<span id="cb5-212"><a href="#cb5-212"></a>  }</span>
+<span id="cb5-213"><a href="#cb5-213"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-5-1" data-nodetype="declaration">
@@ -964,12 +963,12 @@ Notebooks
 <div class="column" style="width:40%;">
 <div style="color:black">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="453" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 452;"><span id="cb6-453"><a href="#cb6-453"></a>viewof footyTeam2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb6-454"><a href="#cb6-454"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
-<span id="cb6-455"><a href="#cb6-455"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
-<span id="cb6-456"><a href="#cb6-456"></a></span>
-<span id="cb6-457"><a href="#cb6-457"></a>viewof year2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
-<span id="cb6-458"><a href="#cb6-458"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="451" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 450;"><span id="cb6-451"><a href="#cb6-451"></a>viewof footyTeam2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb6-452"><a href="#cb6-452"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
+<span id="cb6-453"><a href="#cb6-453"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
+<span id="cb6-454"><a href="#cb6-454"></a></span>
+<span id="cb6-455"><a href="#cb6-455"></a>viewof year2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
+<span id="cb6-456"><a href="#cb6-456"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-6-1" data-nodetype="declaration">
@@ -988,24 +987,24 @@ Notebooks
 </div>
 </div><div class="column" style="width:60%;">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="466" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 465;"><span id="cb7-466"><a href="#cb7-466"></a>scores2 <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb7-467"><a href="#cb7-467"></a>filteredScores2 <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam2 <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year2)</span>
-<span id="cb7-468"><a href="#cb7-468"></a></span>
-<span id="cb7-469"><a href="#cb7-469"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb7-470"><a href="#cb7-470"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb7-471"><a href="#cb7-471"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores2<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span> })</span>
-<span id="cb7-472"><a href="#cb7-472"></a>  ]<span class="op">,</span></span>
-<span id="cb7-473"><a href="#cb7-473"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span> <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span> }<span class="op">,</span></span>
-<span id="cb7-474"><a href="#cb7-474"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
-<span id="cb7-475"><a href="#cb7-475"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
-<span id="cb7-476"><a href="#cb7-476"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb7-477"><a href="#cb7-477"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb7-478"><a href="#cb7-478"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
-<span id="cb7-479"><a href="#cb7-479"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb7-480"><a href="#cb7-480"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
-<span id="cb7-481"><a href="#cb7-481"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span></span>
-<span id="cb7-482"><a href="#cb7-482"></a>  }</span>
-<span id="cb7-483"><a href="#cb7-483"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="464" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 463;"><span id="cb7-464"><a href="#cb7-464"></a>scores2 <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb7-465"><a href="#cb7-465"></a>filteredScores2 <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam2 <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year2)</span>
+<span id="cb7-466"><a href="#cb7-466"></a></span>
+<span id="cb7-467"><a href="#cb7-467"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb7-468"><a href="#cb7-468"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb7-469"><a href="#cb7-469"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores2<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span> })</span>
+<span id="cb7-470"><a href="#cb7-470"></a>  ]<span class="op">,</span></span>
+<span id="cb7-471"><a href="#cb7-471"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span> <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span> }<span class="op">,</span></span>
+<span id="cb7-472"><a href="#cb7-472"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
+<span id="cb7-473"><a href="#cb7-473"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
+<span id="cb7-474"><a href="#cb7-474"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb7-475"><a href="#cb7-475"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb7-476"><a href="#cb7-476"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
+<span id="cb7-477"><a href="#cb7-477"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb7-478"><a href="#cb7-478"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb7-479"><a href="#cb7-479"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span></span>
+<span id="cb7-480"><a href="#cb7-480"></a>  }</span>
+<span id="cb7-481"><a href="#cb7-481"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-7-1" data-nodetype="declaration">
@@ -1190,8 +1189,8 @@ This gets old quickly!
 <p>We make a slider called <code>x</code>…</p>
 <div style="color: black">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" data-startfrom="648" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 647;"><span id="cb10-648"><a href="#cb10-648"></a>viewof x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
-<span id="cb10-649"><a href="#cb10-649"></a>  [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> { <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-startfrom="646" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 645;"><span id="cb10-646"><a href="#cb10-646"></a>viewof x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb10-647"><a href="#cb10-647"></a>  [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> { <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="declaration">
 
@@ -1204,8 +1203,8 @@ This gets old quickly!
 <div class="fragment">
 <p>… and then reference it:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11" data-startfrom="662" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 661;"><span id="cb11-662"><a href="#cb11-662"></a><span class="fu">md</span><span class="vs">`The square of </span><span class="sc">${</span>x<span class="sc">}</span><span class="vs"> is </span><span class="sc">${</span>x<span class="op">**</span><span class="dv">2</span><span class="sc">}</span><span class="vs">!</span></span>
-<span id="cb11-663"><a href="#cb11-663"></a><span class="vs">  How about that!`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11" data-startfrom="660" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 659;"><span id="cb11-660"><a href="#cb11-660"></a><span class="fu">md</span><span class="vs">`The square of </span><span class="sc">${</span>x<span class="sc">}</span><span class="vs"> is </span><span class="sc">${</span>x<span class="op">**</span><span class="dv">2</span><span class="sc">}</span><span class="vs">!</span></span>
+<span id="cb11-661"><a href="#cb11-661"></a><span class="vs">  How about that!`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="expression">
 
@@ -1228,12 +1227,12 @@ This gets old quickly!
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="688" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 687;"><span id="cb12-688"><a href="#cb12-688"></a>viewof footyTeam <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb12-689"><a href="#cb12-689"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
-<span id="cb12-690"><a href="#cb12-690"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
-<span id="cb12-691"><a href="#cb12-691"></a></span>
-<span id="cb12-692"><a href="#cb12-692"></a>viewof year <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
-<span id="cb12-693"><a href="#cb12-693"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="686" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 685;"><span id="cb12-686"><a href="#cb12-686"></a>viewof footyTeam <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb12-687"><a href="#cb12-687"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
+<span id="cb12-688"><a href="#cb12-688"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
+<span id="cb12-689"><a href="#cb12-689"></a></span>
+<span id="cb12-690"><a href="#cb12-690"></a>viewof year <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
+<span id="cb12-691"><a href="#cb12-691"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-10-1" data-nodetype="declaration">
@@ -1252,17 +1251,17 @@ This gets old quickly!
 </div>
 <div id="tabset-1-2">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb13" data-startfrom="702" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 701;"><span id="cb13-702"><a href="#cb13-702"></a>viewof footyTeam <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb13-703"><a href="#cb13-703"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
-<span id="cb13-704"><a href="#cb13-704"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
-<span id="cb13-705"><a href="#cb13-705"></a></span>
-<span id="cb13-706"><a href="#cb13-706"></a>viewof year <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
-<span id="cb13-707"><a href="#cb13-707"></a>  [<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
-<span id="cb13-708"><a href="#cb13-708"></a>  {</span>
-<span id="cb13-709"><a href="#cb13-709"></a>    <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span></span>
-<span id="cb13-710"><a href="#cb13-710"></a>    <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span></span>
-<span id="cb13-711"><a href="#cb13-711"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span></span>
-<span id="cb13-712"><a href="#cb13-712"></a>  })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13" data-startfrom="700" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 699;"><span id="cb13-700"><a href="#cb13-700"></a>viewof footyTeam <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb13-701"><a href="#cb13-701"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
+<span id="cb13-702"><a href="#cb13-702"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
+<span id="cb13-703"><a href="#cb13-703"></a></span>
+<span id="cb13-704"><a href="#cb13-704"></a>viewof year <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb13-705"><a href="#cb13-705"></a>  [<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
+<span id="cb13-706"><a href="#cb13-706"></a>  {</span>
+<span id="cb13-707"><a href="#cb13-707"></a>    <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span></span>
+<span id="cb13-708"><a href="#cb13-708"></a>    <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span></span>
+<span id="cb13-709"><a href="#cb13-709"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span></span>
+<span id="cb13-710"><a href="#cb13-710"></a>  })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-11-1" data-nodetype="declaration">
@@ -1287,24 +1286,24 @@ This gets old quickly!
 <div class="tab-content">
 <div id="tabset-2-1">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="726" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 725;"><span id="cb14-726"><a href="#cb14-726"></a>scores <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb14-727"><a href="#cb14-727"></a>filteredScores <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year)</span>
-<span id="cb14-728"><a href="#cb14-728"></a></span>
-<span id="cb14-729"><a href="#cb14-729"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb14-730"><a href="#cb14-730"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb14-731"><a href="#cb14-731"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span> })</span>
-<span id="cb14-732"><a href="#cb14-732"></a>  ]<span class="op">,</span></span>
-<span id="cb14-733"><a href="#cb14-733"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span> <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span> }<span class="op">,</span></span>
-<span id="cb14-734"><a href="#cb14-734"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
-<span id="cb14-735"><a href="#cb14-735"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
-<span id="cb14-736"><a href="#cb14-736"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb14-737"><a href="#cb14-737"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb14-738"><a href="#cb14-738"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
-<span id="cb14-739"><a href="#cb14-739"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb14-740"><a href="#cb14-740"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
-<span id="cb14-741"><a href="#cb14-741"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span></span>
-<span id="cb14-742"><a href="#cb14-742"></a>  }</span>
-<span id="cb14-743"><a href="#cb14-743"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="724" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 723;"><span id="cb14-724"><a href="#cb14-724"></a>scores <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb14-725"><a href="#cb14-725"></a>filteredScores <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year)</span>
+<span id="cb14-726"><a href="#cb14-726"></a></span>
+<span id="cb14-727"><a href="#cb14-727"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb14-728"><a href="#cb14-728"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb14-729"><a href="#cb14-729"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span> })</span>
+<span id="cb14-730"><a href="#cb14-730"></a>  ]<span class="op">,</span></span>
+<span id="cb14-731"><a href="#cb14-731"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span> <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span> }<span class="op">,</span></span>
+<span id="cb14-732"><a href="#cb14-732"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
+<span id="cb14-733"><a href="#cb14-733"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
+<span id="cb14-734"><a href="#cb14-734"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb14-735"><a href="#cb14-735"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb14-736"><a href="#cb14-736"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
+<span id="cb14-737"><a href="#cb14-737"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb14-738"><a href="#cb14-738"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb14-739"><a href="#cb14-739"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span></span>
+<span id="cb14-740"><a href="#cb14-740"></a>  }</span>
+<span id="cb14-741"><a href="#cb14-741"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-12-1" data-nodetype="declaration">
@@ -1330,35 +1329,35 @@ This gets old quickly!
 </div>
 <div id="tabset-2-2">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb15" data-startfrom="753" data-source-offset="-18"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 752;"><span id="cb15-753"><a href="#cb15-753"></a>scores <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)</span>
-<span id="cb15-754"><a href="#cb15-754"></a>  <span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb15-755"><a href="#cb15-755"></a></span>
-<span id="cb15-756"><a href="#cb15-756"></a><span class="co">// filter it using the controls</span></span>
-<span id="cb15-757"><a href="#cb15-757"></a>filteredScores <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(</span>
-<span id="cb15-758"><a href="#cb15-758"></a>  d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam <span class="op">&amp;&amp;</span></span>
-<span id="cb15-759"><a href="#cb15-759"></a>  d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year)</span>
-<span id="cb15-760"><a href="#cb15-760"></a></span>
-<span id="cb15-761"><a href="#cb15-761"></a><span class="co">// make the chart</span></span>
-<span id="cb15-762"><a href="#cb15-762"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb15-763"><a href="#cb15-763"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb15-764"><a href="#cb15-764"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores<span class="op">,</span> {</span>
-<span id="cb15-765"><a href="#cb15-765"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span></span>
-<span id="cb15-766"><a href="#cb15-766"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span></span>
-<span id="cb15-767"><a href="#cb15-767"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span></span>
-<span id="cb15-768"><a href="#cb15-768"></a>    })</span>
-<span id="cb15-769"><a href="#cb15-769"></a>  ]<span class="op">,</span></span>
-<span id="cb15-770"><a href="#cb15-770"></a>  <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb15-771"><a href="#cb15-771"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span></span>
-<span id="cb15-772"><a href="#cb15-772"></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span></span>
-<span id="cb15-773"><a href="#cb15-773"></a>  }<span class="op">,</span></span>
-<span id="cb15-774"><a href="#cb15-774"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
-<span id="cb15-775"><a href="#cb15-775"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
-<span id="cb15-776"><a href="#cb15-776"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb15-777"><a href="#cb15-777"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb15-778"><a href="#cb15-778"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
-<span id="cb15-779"><a href="#cb15-779"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
-<span id="cb15-780"><a href="#cb15-780"></a>  <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span> }</span>
-<span id="cb15-781"><a href="#cb15-781"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-startfrom="751" data-source-offset="-18"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 750;"><span id="cb15-751"><a href="#cb15-751"></a>scores <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)</span>
+<span id="cb15-752"><a href="#cb15-752"></a>  <span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb15-753"><a href="#cb15-753"></a></span>
+<span id="cb15-754"><a href="#cb15-754"></a><span class="co">// filter it using the controls</span></span>
+<span id="cb15-755"><a href="#cb15-755"></a>filteredScores <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(</span>
+<span id="cb15-756"><a href="#cb15-756"></a>  d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam <span class="op">&amp;&amp;</span></span>
+<span id="cb15-757"><a href="#cb15-757"></a>  d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year)</span>
+<span id="cb15-758"><a href="#cb15-758"></a></span>
+<span id="cb15-759"><a href="#cb15-759"></a><span class="co">// make the chart</span></span>
+<span id="cb15-760"><a href="#cb15-760"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb15-761"><a href="#cb15-761"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb15-762"><a href="#cb15-762"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores<span class="op">,</span> {</span>
+<span id="cb15-763"><a href="#cb15-763"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span></span>
+<span id="cb15-764"><a href="#cb15-764"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span></span>
+<span id="cb15-765"><a href="#cb15-765"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span></span>
+<span id="cb15-766"><a href="#cb15-766"></a>    })</span>
+<span id="cb15-767"><a href="#cb15-767"></a>  ]<span class="op">,</span></span>
+<span id="cb15-768"><a href="#cb15-768"></a>  <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb15-769"><a href="#cb15-769"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span></span>
+<span id="cb15-770"><a href="#cb15-770"></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span></span>
+<span id="cb15-771"><a href="#cb15-771"></a>  }<span class="op">,</span></span>
+<span id="cb15-772"><a href="#cb15-772"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
+<span id="cb15-773"><a href="#cb15-773"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
+<span id="cb15-774"><a href="#cb15-774"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb15-775"><a href="#cb15-775"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb15-776"><a href="#cb15-776"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
+<span id="cb15-777"><a href="#cb15-777"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb15-778"><a href="#cb15-778"></a>  <span class="dt">style</span><span class="op">:</span> { <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span> }</span>
+<span id="cb15-779"><a href="#cb15-779"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-13-1" data-nodetype="declaration">
@@ -1466,16 +1465,16 @@ This gets old quickly!
 </div><div class="column" style="width:60%;">
 <div class="fragment">
 <div class="cell" data-eval="false">
-<div class="sourceCode cell-code" id="cb16" data-startfrom="862" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 861;"><span id="cb16-862"><a href="#cb16-862"></a>countsUsed <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
-<span id="cb16-863"><a href="#cb16-863"></a>  <span class="op">.</span><span class="fu">derive</span>({</span>
-<span id="cb16-864"><a href="#cb16-864"></a>    <span class="dt">used</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseUsed</span><span class="op">,</span> <span class="st">", "</span>)</span>
-<span id="cb16-865"><a href="#cb16-865"></a>  })</span>
-<span id="cb16-866"><a href="#cb16-866"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"used"</span>)</span>
-<span id="cb16-867"><a href="#cb16-867"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"used"</span>)</span>
-<span id="cb16-868"><a href="#cb16-868"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"used"</span>)</span>
-<span id="cb16-869"><a href="#cb16-869"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
-<span id="cb16-870"><a href="#cb16-870"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Have used"</span> })</span>
-<span id="cb16-871"><a href="#cb16-871"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">used</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-startfrom="860" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 859;"><span id="cb16-860"><a href="#cb16-860"></a>countsUsed <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
+<span id="cb16-861"><a href="#cb16-861"></a>  <span class="op">.</span><span class="fu">derive</span>({</span>
+<span id="cb16-862"><a href="#cb16-862"></a>    <span class="dt">used</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseUsed</span><span class="op">,</span> <span class="st">", "</span>)</span>
+<span id="cb16-863"><a href="#cb16-863"></a>  })</span>
+<span id="cb16-864"><a href="#cb16-864"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"used"</span>)</span>
+<span id="cb16-865"><a href="#cb16-865"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"used"</span>)</span>
+<span id="cb16-866"><a href="#cb16-866"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"used"</span>)</span>
+<span id="cb16-867"><a href="#cb16-867"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
+<span id="cb16-868"><a href="#cb16-868"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Have used"</span> })</span>
+<span id="cb16-869"><a href="#cb16-869"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">used</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-14" data-nodetype="declaration">
 
