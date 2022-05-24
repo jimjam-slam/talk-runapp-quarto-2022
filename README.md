@@ -1,4 +1,4 @@
-# talk-runapp-quarto-2022
+# Quarto: create beautiful documents with R, Python, Julia and Observable (Runapp 2022 talk)
 
 Hi there! If you're looking for the slides for my runapp talk, you can find them at <https://runapp2022.talks.jamesgoldie.dev> or in the `out` folder.
 
