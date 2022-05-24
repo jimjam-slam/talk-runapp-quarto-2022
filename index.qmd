@@ -69,6 +69,19 @@ These two things give Quarto a really strong basis for helping data scientists l
 
 ::: {.notes}
 (click)
+
+I've been working for 360info for about 9 months
+
+We're a research-driven newswire, and we give everything away for free under Creative Commons so that all journalists can benefit from it
+
+We're founded by Andrew Jaspan, the man who also founded The Conversation
+
+As our team grows, I'm doing some of everything:
+
+* analysing data
+* build charts and maps
+* working with our infrastructure partners
+
 :::
 
 ::::: {.columns style="text-align:center;margin-top:50px;"}
@@ -113,6 +126,21 @@ Now I'm a data journalist with
 
 ## Poll: what tools do you use? {.text-lime-cyan}
 
+::: {.notes}
+Would love to find out more about all of you and what you're learning
+
+No personal info in this poll, just 2 Qs
+
+1. What have you used before?
+2. What do you want to learn?
+
+Take a moment to fill it in on your phone
+
+Normally if you wanted to do a poll in a presentation, you'd use a third-party website like Slido and embed it
+
+For today's poll I decided to take a risk and build it entirely in Quarto.
+:::
+
 :::: {.columns}
 :::{.column width="40%"}
 ![](./images/qrcode-survey.png){fig-alt="A QR code for the survey."}
@@ -138,7 +166,7 @@ surveyResults = liveGoogleSheet(
   "https://docs.google.com/spreadsheets/d/e/" +
     "2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/" +
     "pub?gid=1368316628&single=true&output=csv",
-  30000, 1, 2);
+  15000, 1, 2);
 
 respondentCount = surveyResults.length;
 ```
@@ -761,6 +789,10 @@ This isn't much more complex than the dropdown menu and footy score chart
 
 # Conclusions {.text-black-white background="linear-gradient(45deg, #fff, #666)"}
 
+::: {.notes}
+So we've seen these two major features of Quarto and how they make it stand out from R Markdown
+:::
+
 ## Quarto helps you write documents... {.center }
 
 ... whether you use **R**, **Python** or **Julia**
@@ -772,6 +804,20 @@ This isn't much more complex than the dropdown menu and footy score chart
 ## Quarto help you make documents that react to users {.center}
 
 ... and you might learn JavaScript by accident!
+
+::: {.notes}
+Between these two features, I think Quarto has a really powerful funnel effect
+
+Learning a new language or framework is a _big commitment_.
+
+Do you try to learn something on the weekend, hope you stay motivated and that you'll have the time on top of the rest of your life?
+
+Or do you take a risk and try to build something for work using a language you don't know?
+
+It's taken me years to start using d3.js for exactly this reason
+
+Quarto makes JavaScript and web visualisation accessible by inches, no matter which data science language you're coming from
+:::
 
 ## A checklist for trying Quarto {.center}
 
