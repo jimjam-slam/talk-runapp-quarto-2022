@@ -83,11 +83,11 @@ Now I'm a data journalist with
 
 :::::
 
-## Poll: what tools do you use? {.text-lime-cyan style="text-align: center;"}
+## Poll: what tools do you use? {.text-lime-cyan}
 
 :::: {.columns}
 :::{.column width="40%"}
-![](./images/qrcode-survey.png){style="filter:invert(1)" fig-alt="A QR code for the survey."}
+![](./images/qrcode-survey.png){fig-alt="A QR code for the survey."}
 :::
 
 ::: {.column width="60%" .center}
@@ -160,7 +160,7 @@ plotUsed = Plot.plot({
 ```
 
 <!-- keep a qr code up in the top-right corner -->
-![](./images/qrcode-survey.png){style="filter:invert(1);position:fixed;top:0;right:0;" fig-alt="A picture of a QR code to the survey."}
+![](./images/qrcode-survey.png){style="position:fixed;top:0;right:0;" fig-alt="A picture of a QR code to the survey."}
 
 # What are <br>[reproducible reports?]{.hl .hl-gold} {.text-wash-black background="linear-gradient(45deg, #f37335, #fdc830)"}
 
