@@ -10,6 +10,20 @@ format:
 
 ## {.center}
 
+::: {.notes}
+Hi, I'm James
+
+I'm D&DSL at 360info @ Monash Uni
+
+Really excited to talk about Quarto
+
+Some people today have used R Markdown and are wondering what this new thing is
+
+Others might be notebook fans or have never used any tools in this space
+
+That's okay - I'm going to cover all the basics and then talk a bit about why I think Quarto has a lot of potential
+:::
+
 <h1 class="text-indigo-pink">Quarto<h1>
 
 <h2>Create beautiful documents with R, Python, Julia and Observable</h2>
@@ -21,6 +35,20 @@ Data and Digital Storytelling Lead, 360info
 :::
 
 ## Today {.center}
+
+::: {.notes}
+I want to get a feel for everyone's experience today, so I'm going to start out qith a quick poll
+
+before i get into Quarto.
+
+For people who've used these kinds of things before, Quarto has two really cool differences.
+
+One is that it's language-independent, so anyone can use it
+
+The other is that it adds a language called Observable JavaScript that makes learning JavaScript easier.
+
+These two things give Quarto a really strong basis for helping data scientists learn to build compelling visualisations for the web.
+:::
 
 1. Hello!
 2. What are reproducible reports?
