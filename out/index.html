@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-99.9.9">
+
+  <title>index</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <script src="index_files/libs/clipboard/clipboard.min.js"></script>
+  <script src="index_files/libs/quarto-html/tabby.min.js"></script>
+  <script src="index_files/libs/quarto-html/popper.min.js"></script>
+  <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+  <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
+  <link id="quarto-text-highlighting-styles" href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script type="module" src="index_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="index_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="section" class="slide level2 center">
+<h2></h2>
+<h1 class="text-indigo-pink">
+Quarto
+</h1><h1>
+</h1><h2>
+Create beautiful documents with R, Python, Julia and Observable
+</h2>
+<section id="james-goldie" class="text-orange-gold" style="margin-top:50px">
+<h3 class="text-orange-gold">JAMES GOLDIE</h3>
+<p>Data and Digital Storytelling Lead, 360info</p>
+</section>
+</section>
+<section id="today" class="slide level2 center">
+<h2>Today</h2>
+<ol type="1">
+<li>Hello!</li>
+<li>What are reproducible reports?</li>
+<li>What’s Quarto? Why can anyone use it?</li>
+<li>Web content</li>
+</ol>
+<h4 id="slides">Slides</h4>
+<p><a href="https://runapp2022.talks.jamesgoldie.dev"><strong>https://runapp2022.talks.jamesgoldie.dev</strong></a></p>
+</section>
+<section>
+<section id="hi" class="title-slide slide level1 text-wash-black center" data-background="linear-gradient(45deg, cyan, lime)">
+<h1>Hi!</h1>
+
+</section>
+<section id="section-1" class="slide level2 text-lime-cyan">
+<h2></h2>
+<aside class="notes">
+<p>(click)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns" style="text-align:center;margin-top:50px;">
+<div class="column" style="margin-top:50px">
+<div class="r-stack">
+<p><img data-src="images/graduation.gif" class="fragment fade-in-then-semi-out" data-fragment-index="1" style="width:70%;transform:rotate(-5deg);" alt="A picture of me and my PhD supervisor, Lisa Alexander, at my graduation."></p>
+<p><img data-src="images/mcccrh-zoom.png" class="fragment fade-in-then-semi-out" data-fragment-index="2" style="transform:rotate(5deg);" alt="A picture of me and MCCCRH staff members on Zoom."></p>
+<p><img data-src="images/mcccrh.gif" class="fragment fade-in-then-semi-out" data-fragment-index="3" style="transform:rotate(-1deg);" alt="A picture of me and MCCCRH staff members on a work trip."></p>
+<p><img data-src="images/mcccrh-projections.jpg" class="fragment fade-in-then-semi-out" data-fragment-index="4" style="transform:rotate(1.5deg);" alt="A picture of Graham Creed from the ABC presenting climate projections."></p>
+<p><img data-src="images/mcccrh-7news.gif" class="fragment fade-in" data-fragment-index="5" style="transform:rotate(-3.5deg);" alt="A picture of Jane Bunn presenting statistics on shrinking winters."></p>
+<!-- ![](images/360logo.png){.fragment fragment-index=6 style="width:85%" fig-alt="The 360info logo."} -->
+</div>
+</div><div class="column" style="margin-top:25px">
+<div class="fragment" data-fragment-index="1">
+<p>I used to be a climate + health researcher</p>
+</div>
+<div class="fragment" data-fragment-index="2">
+<p>•</p>
+<p>Worked with <strong><a href="https://climateextremes.org.au">CLEX</a></strong> and <strong><a href="https://monash.edu/mcccrh">MCCCRH</a></strong> on climate change communication</p>
+</div>
+<div class="fragment" data-fragment-index="6">
+<p>•</p>
+<!-- Now a data journalist with **[360info.org](https://360info.org)!** -->
+<p>Now I’m a data journalist with</p>
+<div id="fig-anonymous-1" class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://360info.org"><img data-src="images/360logo.svg" style="width:50%;"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="poll-what-tools-do-you-use" class="slide level2 text-lime-cyan" style="text-align: center;">
+<h2>Poll: what tools do you use?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="./images/qrcode-survey.png" style="filter:invert(1)" alt="A QR code for the survey."></p>
+</div><div class="column center" style="width:60%;">
+<p><br>Take the survey at <strong><a href="https://forms.gle/EdADv8GvDxUrrRmy8" class="uri">https://forms.gle/EdADv8GvDxUrrRmy8</a></strong></p>
+</div>
+</div>
+</section>
+<section id="section-2" class="slide level2 text-lime-cyan" style="text-align: center;">
+<h2></h2>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="97" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb1-97"><a href="#cb1-97"></a><span class="fu">md</span><span class="vs">`## Poll results (Respondents: </span><span class="sc">${</span>respondentCount<span class="sc">}</span><span class="vs">)`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="103" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 102;"><span id="cb2-103"><a href="#cb2-103"></a><span class="im">import</span> { liveGoogleSheet } <span class="im">from</span> <span class="st">"@jimjamslam/live-google-sheet"</span><span class="op">;</span></span>
+<span id="cb2-104"><a href="#cb2-104"></a><span class="im">import</span> { aq<span class="op">,</span> op } <span class="im">from</span> <span class="st">"@uwdata/arquero"</span><span class="op">;</span></span>
+<span id="cb2-105"><a href="#cb2-105"></a></span>
+<span id="cb2-106"><a href="#cb2-106"></a>surveyResults <span class="op">=</span> <span class="fu">liveGoogleSheet</span>(</span>
+<span id="cb2-107"><a href="#cb2-107"></a>  <span class="st">"https://docs.google.com/spreadsheets/d/e/"</span> <span class="op">+</span></span>
+<span id="cb2-108"><a href="#cb2-108"></a>    <span class="st">"2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/"</span> <span class="op">+</span></span>
+<span id="cb2-109"><a href="#cb2-109"></a>    <span class="st">"pub?gid=1368316628&amp;single=true&amp;output=csv"</span><span class="op">,</span></span>
+<span id="cb2-110"><a href="#cb2-110"></a>  <span class="dv">30000</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb2-111"><a href="#cb2-111"></a></span>
+<span id="cb2-112"><a href="#cb2-112"></a>respondentCount <span class="op">=</span> surveyResults<span class="op">.</span><span class="at">length</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="115" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 114;"><span id="cb3-115"><a href="#cb3-115"></a><span class="co">// get the counts of people using and interested in tools</span></span>
+<span id="cb3-116"><a href="#cb3-116"></a>countsUsed <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
+<span id="cb3-117"><a href="#cb3-117"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">used</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseUsed</span><span class="op">,</span> <span class="st">", "</span>) })</span>
+<span id="cb3-118"><a href="#cb3-118"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"used"</span>)</span>
+<span id="cb3-119"><a href="#cb3-119"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"used"</span>)</span>
+<span id="cb3-120"><a href="#cb3-120"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"used"</span>)</span>
+<span id="cb3-121"><a href="#cb3-121"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
+<span id="cb3-122"><a href="#cb3-122"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Have used"</span> })</span>
+<span id="cb3-123"><a href="#cb3-123"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">used</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="127" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 126;"><span id="cb4-127"><a href="#cb4-127"></a>countsWant <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
+<span id="cb4-128"><a href="#cb4-128"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">want</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseWant</span><span class="op">,</span> <span class="st">", "</span>) })</span>
+<span id="cb4-129"><a href="#cb4-129"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"want"</span>)</span>
+<span id="cb4-130"><a href="#cb4-130"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"want"</span>)</span>
+<span id="cb4-131"><a href="#cb4-131"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"want"</span>)</span>
+<span id="cb4-132"><a href="#cb4-132"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
+<span id="cb4-133"><a href="#cb4-133"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Want to learn"</span> })</span>
+<span id="cb4-134"><a href="#cb4-134"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">want</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="140" data-source-offset="-49"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 139;"><span id="cb5-140"><a href="#cb5-140"></a>countsAll <span class="op">=</span> [<span class="op">...</span>countsUsed<span class="op">.</span><span class="fu">objects</span>()<span class="op">,</span> <span class="op">...</span>countsWant<span class="op">.</span><span class="fu">objects</span>()]<span class="op">;</span></span>
+<span id="cb5-141"><a href="#cb5-141"></a></span>
+<span id="cb5-142"><a href="#cb5-142"></a>plotUsed <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-143"><a href="#cb5-143"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-144"><a href="#cb5-144"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(countsAll<span class="op">,</span> { <span class="dt">y</span><span class="op">:</span> <span class="st">"tool"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"count"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"tool"</span> })<span class="op">,</span></span>
+<span id="cb5-145"><a href="#cb5-145"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([respondentCount]<span class="op">,</span> { <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#ffffff99"</span> })</span>
+<span id="cb5-146"><a href="#cb5-146"></a>  ]<span class="op">,</span></span>
+<span id="cb5-147"><a href="#cb5-147"></a>  <span class="dt">x</span> <span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">""</span> }<span class="op">,</span></span>
+<span id="cb5-148"><a href="#cb5-148"></a>  <span class="dt">y</span> <span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span> <span class="dt">tickSize</span><span class="op">:</span> <span class="dv">0</span> }<span class="op">,</span></span>
+<span id="cb5-149"><a href="#cb5-149"></a>  <span class="dt">facet</span><span class="op">:</span> { <span class="dt">data</span><span class="op">:</span> countsAll<span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"measure"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">""</span> }<span class="op">,</span></span>
+<span id="cb5-150"><a href="#cb5-150"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">140</span><span class="op">,</span></span>
+<span id="cb5-151"><a href="#cb5-151"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb5-152"><a href="#cb5-152"></a>    <span class="dt">backgroundColor</span><span class="op">:</span> <span class="st">"black"</span><span class="op">,</span></span>
+<span id="cb5-153"><a href="#cb5-153"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb5-154"><a href="#cb5-154"></a>    <span class="dt">width</span><span class="op">:</span> <span class="dv">1350</span><span class="op">,</span></span>
+<span id="cb5-155"><a href="#cb5-155"></a>    <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb5-156"><a href="#cb5-156"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span></span>
+<span id="cb5-157"><a href="#cb5-157"></a>  }</span>
+<span id="cb5-158"><a href="#cb5-158"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<!-- keep a qr code up in the top-right corner -->
+
+<img data-src="./images/qrcode-survey.png" style="filter:invert(1);position:fixed;top:0;right:0;" alt="A picture of a QR code to the survey." class="r-stretch"></section></section>
+<section>
+<section id="what-are-reproducible-reports" class="title-slide slide level1 text-wash-black center" data-background="linear-gradient(45deg, #f37335, #fdc830)">
+<h1>What are <br><span class="hl hl-gold">reproducible reports?</span></h1>
+
+</section>
+<section id="section-3" class="slide level2" data-background-image="images/confused-dog.jpg">
+<h2></h2>
+<aside class="notes">
+<p>If you work in Python or Julia, you may have heard of <strong>notebooks</strong></p>
+<p>R users might have heard of <strong>reproducible reports</strong></p>
+<p>All examples of <strong>literate programming</strong></p>
+<p>Literate programming is about <em>explaining your code</em> by combining code with written prose and graphics</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<aside class="notes">
+<p>Very nice to read!</p>
+<p>Readable even if you didn’t write it</p>
+<p>File format is opaque and hard to version control</p>
+<p>Files shared or hosted on special notebook services</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column" style="margin-top:30px;">
+<h2 class="text-orange-gold">
+Notebooks
+</h2>
+<ul>
+<li>Contain:
+<ul>
+<li>Writing</li>
+<li>Code</li>
+<li><span style="color:gold;"><strong>Results in the file too</strong></span></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/notebook.png" alt="A picture of a Jupyter notebook loaded into Visual Studio Code."></p>
+</div>
+</div>
+</section>
+<section id="reproducible-reports" class="slide level2 text-orange-gold" style="text-align:center">
+<h2>Reproducible reports</h2>
+<p>Source <strong>documents</strong> are <strong>rendered</strong> to produce <strong>results</strong></p>
+<aside class="notes">
+<p>R Markdown is more common among R users</p>
+<p>Instead of code and results together, we <em>render</em> a source document</p>
+<p>Contains writing and code, but not results!</p>
+<p>An R Markdown document is <em>rendered</em>. The final report is a separate file!</p>
+<p>Plain text source file</p>
+<p>Easy to see changes over time in version control</p>
+<p>Docs, books, websites, presentations…</p>
+<p>Need R to run it</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/rmd-source.png" alt="An R Markdown source document in a plain text code editor"></p>
+</div><!-- ::: {.column width="20%"}
+ 
+::: --><div class="column" style="width:50%;">
+<p><img data-src="images/rmd-render.png" alt="An R Markdown document rendered into HTML with a plot in it."></p>
+</div>
+</div>
+</section>
+<section id="the-rmarkdown-ecosystem" class="slide level2 text-orange-gold">
+<h2>The RMarkdown ecosystem</h2>
+<aside class="notes">
+<p>Because R Markdown gets rendered, it can make lots of different kinds of documents!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div style="text-align:center;margin-top:175px;">
+<p>R packages for just about every kind of document:</p>
+<p><a href="https://github.com/yihui/xaringan"><code>xaringan</code></a> • <a href="https://rstudio.github.io/distill"><code>distill</code></a> • <a href="https://bookdown.org/yihui/blogdown"><code>blogdown</code></a> • <a href="https://github.com/r-lib/hugodown"><code>hugodown</code></a> • <a href="https://bookdown.org"><code>bookdown</code></a> • <a href="https://github.com/ismayc/thesisdown"><code>thesisdown</code></a> • <a href="https://ulyngs.github.io/oxforddown"><code>oxforddown</code></a> • <a href="https://github.com/jimjam-slam/unswthesisdown"><code>unswthesisdown</code></a> • <a href="https://github.com/rstudio/pagedown"><code>pagedown</code></a> • <a href="https://pkgs.rstudio.com/flexdashboard/"><code>flexdashboard</code></a> • <a href="https://github.com/juba/rmdformats"><code>rmdformats</code></a> • <a href="https://github.com/rstudio/rticles"><code>rticles</code></a> • <a href="https://prettydoc.statr.me/"><code>prettydoc</code></a> • <a href="https://github.com/hrbrmstr/markdowntemplates"><code>markdowntemplates</code></a> • and more…</p>
+</div>
+</section></section>
+<section>
+<section id="quarto-literate-programming-foreveryone" class="title-slide slide level1 center" data-background="linear-gradient(45deg, #4a00e0, #ff0099)">
+<h1>Quarto:<br><span style="font-size:75%;">Literate programming for<span class="hl hl-purple">everyone</span></span></h1>
+<aside class="notes">
+<p>So we have two very different approaches to explaining your data.</p>
+<p>Notebooks are a really nice writing experience, and it’s good to have code and results in one place.</p>
+<p>But they’re difficult to share or collaborate on without dedicated services.</p>
+<p>RMarkdown docs have a massive ecosystem for lots of different outputs, and they’re very clear and easy to share. But not everyone uses R!</p>
+<p>Quarto tries to have its cake and eat it too.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="notebooks-or-documents" class="slide level2 text-indigo-pink" style="text-align:center">
+<h2>Notebooks or documents</h2>
+<aside class="notes">
+<p>You don’t have to choose between writing in notebooks or documents - they both work!</p>
+<p>Here we have a Quarto report, written two different ways: a notebook and a document.</p>
+<p>Either of these can be rendered - into a webpage, a blog post, a slideshow, a Word document, a PDF…</p>
+<p>If you’re used to documents, Quarto ones look almost the same!</p>
+<p>We still have <em>chunk options</em> (cell options for notebook people). They sit as special comments at the start of the cell, and they’re written in YAML. You can add them to notebook cells too!</p>
+<p>(The old RMarkdown way still works.)</p>
+<p>Frontmatter still works largely the same as RMarkdown, but you can add it to notebooks too!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><img data-src="images/notebook-vs-document.png" style="width:100%; height:auto;" alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right."></p>
+</section>
+<section id="r-python-julia" class="slide level2 text-indigo-pink" style="text-align:center">
+<h2>R, Python, Julia</h2>
+<aside class="notes">
+<p>The other big change here is that you can use your <strong>favourite language</strong> in <strong>either format.</strong></p>
+<p>You can write Python chunks in a document like the one on the right, and you can render it <strong>without needing to have R installed.</strong></p>
+<p>On the flip side, you can write R cells in a notebook. Or Julia. <strong>Or all three!</strong></p>
+<p>Quarto is a <strong>separate tool</strong> that runs in the shell. It comes with everything you need, except the programming languages you want to use.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><img data-src="images/notebook-vs-document.png" style="width:100%; height:auto;" alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right."></p>
+</section>
+<section id="editors" class="slide level2 text-indigo-pink" style="text-align: center">
+<h2>Editors</h2>
+<aside class="notes">
+<p>The examples I’ve shown are in Visual Studio Code, which is a code editor that I love.</p>
+<p>Quarto works really nicely there. It even has a help panel that switches languages as you type!</p>
+<p>Quarto also works fantastically with the JupyterLab editor and with RStudio.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns" style="margin-top:150px;">
+<div class="column" style="width:33%;">
+<div id="fig-anonymous-2" class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://code.visualstudio.com"><img data-src="images/editor-vscode.png" alt="Visual Studio Code logo" width="250"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div id="fig-anonymous-3" class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://rstudio.com"><img data-src="images/editor-rstudio.png" alt="RStudio logo" width="250"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div id="fig-anonymous-4" class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://jupyterlab.readthedocs.io/en/stable"><img data-src="images/editor-jupyterlab.png" alt="Jupyter logo" width="250"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="rstudio-visual-editor" class="slide level2 text-indigo-pink" style="text-align: center">
+<h2>RStudio visual editor</h2>
+<aside class="notes">
+<p>If you use RStudio and you’re used to writing documents but like the way notebooks look, you don’t even have to choose!</p>
+<p>RStudio has a <strong>notebook-style editor</strong> <em>for documents</em>.</p>
+<p>You can switch back and forth as you like, and it has a command palette to help you insert things.</p>
+<p>R Markdown has been able to include code from other languages for a while, but I think this is a really big step to facilitating cross-language collaboration.</p>
+<p>For someone who only works in Python or Julia, it’s a really tough sell to ask them to install R and several packages in order to write documents.</p>
+<p>With Quarto, you can have a website with people contributing posts as a mix of notebooks and documents in any (or all languages).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/rstudio-source.png" alt="Editing a Quarto document in RStudio in the plain text view."></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/rstudio-visual.png" alt="Editing a Quarto document in RStudio in the visual editor"></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="spicing-up-quarto-with-reactivity-and-observable-js" class="title-slide slide level1 center" data-background="linear-gradient(45deg, #ed213a, #93291e)">
+<h1>Spicing up Quarto<br><span style="font-size:75%;">with <span class="hl hl-red">reactivity</span> and <span class="hl hl-red">Observable JS</span></span></h1>
+<aside class="notes">
+<p>Quarto has one other big feature that I think we need to talk about</p>
+<p>It’s called <strong>Observable JS</strong>, and it can make your reports, your books and your slides <strong>reactive</strong>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<aside class="notes">
+<p>So when we render our document, code runs and it changes how the report looks.</p>
+<p>Maybe it creates a plot from some data, or prints some statistics.</p>
+<p>But sometimes we want our document to change <strong>as it’s being read.</strong></p>
+<p>We want to let users to make decisions and for the document to <strong>react</strong> to things changing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div style="margin-top:-100px">
+<h3 class="r-fit-text text-orange-gold" id="reactivity">Reactivity?</h3>
+<h3 class="r-fit-text text-red-brown" style="font-weight:900" id="huh">HUH?</h3>
+</div>
+</section>
+<section id="example-footy-scores" class="slide level2 text-red-brown center smaller" style="text-align:center">
+<h2>Example: footy scores</h2>
+<aside class="notes">
+<p>So let’s say we had data on footy scores for different teams over a number of years.</p>
+<p>We could try to make one graphic that shows all the data, but it’s a lot!</p>
+<p>And maybe different readers care about different teams.</p>
+<p>We can let our chart <strong>react</strong> to the decisions our users make about footy team and year.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><strong>menu</strong> + <strong>slider</strong> =&gt; <strong>chart of footy scores</strong></p>
+<div class="columns fragment">
+<div class="column" style="width:40%;">
+<div style="color:black">
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="396" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 395;"><span id="cb6-396"><a href="#cb6-396"></a>viewof footyTeam <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb6-397"><a href="#cb6-397"></a>  [<span class="st">"Pies"</span><span class="op">,</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="st">"Bombers"</span><span class="op">,</span> <span class="st">"Cats"</span>]<span class="op">,</span></span>
+<span id="cb6-398"><a href="#cb6-398"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="st">"Blues"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Footy team"</span> })</span>
+<span id="cb6-399"><a href="#cb6-399"></a></span>
+<span id="cb6-400"><a href="#cb6-400"></a>viewof year <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1990</span><span class="op">,</span> <span class="dv">2005</span>]<span class="op">,</span></span>
+<span id="cb6-401"><a href="#cb6-401"></a>  { <span class="dt">value</span><span class="op">:</span> <span class="dv">1990</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Year"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">300</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-6-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-6-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="409" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 408;"><span id="cb7-409"><a href="#cb7-409"></a>scores <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/footy-scores.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb7-410"><a href="#cb7-410"></a>filteredScores <span class="op">=</span> scores<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">team</span> <span class="op">==</span> footyTeam <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">year</span> <span class="op">==</span> year)</span>
+<span id="cb7-411"><a href="#cb7-411"></a></span>
+<span id="cb7-412"><a href="#cb7-412"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb7-413"><a href="#cb7-413"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb7-414"><a href="#cb7-414"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(filteredScores<span class="op">,</span> { <span class="dt">x</span><span class="op">:</span> <span class="st">"game"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"score"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"game"</span> })</span>
+<span id="cb7-415"><a href="#cb7-415"></a>  ]<span class="op">,</span></span>
+<span id="cb7-416"><a href="#cb7-416"></a>  <span class="dt">x</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Game number"</span><span class="op">,</span> <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">70</span> }<span class="op">,</span></span>
+<span id="cb7-417"><a href="#cb7-417"></a>  <span class="dt">y</span><span class="op">:</span> { <span class="dt">label</span><span class="op">:</span> <span class="st">"Score"</span> }<span class="op">,</span></span>
+<span id="cb7-418"><a href="#cb7-418"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span><span class="op">,</span></span>
+<span id="cb7-419"><a href="#cb7-419"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
+<span id="cb7-420"><a href="#cb7-420"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb7-421"><a href="#cb7-421"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span></span>
+<span id="cb7-422"><a href="#cb7-422"></a>  <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb7-423"><a href="#cb7-423"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb7-424"><a href="#cb7-424"></a>    <span class="dt">backgroundColor</span><span class="op">:</span> <span class="st">"black"</span><span class="op">,</span></span>
+<span id="cb7-425"><a href="#cb7-425"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"white"</span><span class="op">,</span></span>
+<span id="cb7-426"><a href="#cb7-426"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">24</span></span>
+<span id="cb7-427"><a href="#cb7-427"></a>  }</span>
+<span id="cb7-428"><a href="#cb7-428"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="code-is-usually-about-doing-things" class="slide level2 text-red-brown center" style="text-align:center">
+<h2>Code is usually about <span class="hl hl-red">doing things</span></h2>
+<aside class="notes">
+<p>Programs and websites do this all the time! There’s a user interface with buttons and dials and sliders, and when we play with them, stuff happens.</p>
+<p>But making that happen can be really tiring.</p>
+<p>Web and app developers deal with this all the time:</p>
+<ul>
+<li>write code to create the button</li>
+<li>then write code to check its value all the time</li>
+<li>then write code to do things every time it changes</li>
+</ul>
+<p>That’s powerful, but it gets old really quickly!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div>
+<ul>
+<li class="fragment">Write code to <strong>create a control</strong></li>
+<li class="fragment">Write code to <strong>check its value all the time</strong></li>
+<li class="fragment">Write code to <strong>do things every time it changes</strong></li>
+<li class="fragment">Write code to <strong>pass updates from one thing to another</strong></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<h2 class="text-orange-gold">
+This gets old quickly!
+</h2>
+<h3 style="font-size:600%" id="section-6">😩</h3>
+</div>
+</div>
+</div>
+</section>
+<section id="reactive-code-just-updates-itself" class="slide level2 text-red-brown center" style="text-align:center">
+<h2>Reactive code just updates itself</h2>
+<div class="fragment">
+<p>Describe a control or input</p>
+</div>
+<div class="fragment">
+<p>Describe an output that <strong>reacts</strong> to the control’s changes</p>
+</div>
+<div class="fragment">
+<p>… there is no step 3</p>
+<p><span style="font-size:smaller">(the output takes care of itself!)</span></p>
+</div>
+</section>
+<section id="this-is-how-shiny-and-dash-work" class="slide level2 text-red-brown" style="text-align:center">
+<h2>This is how <span class="hl hl-red">Shiny</span> and <span class="hl hl-red">Dash</span> work!</h2>
+<p><strong>menu</strong> + <strong>slider</strong> =&gt; <strong>chart of footy scores</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|6,11,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># describe some controls - a dropdown menu</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="co"># and a slider - and a plot</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a></span>
+<span id="cb8-4"><a href="#cb8-4"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb8-5"><a href="#cb8-5"></a></span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="fu">selectInput</span>(<span class="st">"footyTeam"</span>,</span>
+<span id="cb8-7"><a href="#cb8-7"></a>    <span class="at">label =</span> <span class="st">"Footy team"</span>,</span>
+<span id="cb8-8"><a href="#cb8-8"></a>    <span class="at">choices =</span> <span class="fu">c</span>(<span class="st">"Pies"</span>, <span class="st">"Blues"</span>,</span>
+<span id="cb8-9"><a href="#cb8-9"></a>      <span class="st">"Bombers"</span>, <span class="st">"Cats"</span>),</span>
+<span id="cb8-10"><a href="#cb8-10"></a>    <span class="at">selected =</span> <span class="st">"Blues"</span>),</span>
+<span id="cb8-11"><a href="#cb8-11"></a>  <span class="fu">sliderInput</span>(<span class="st">"year"</span>, <span class="at">label =</span> <span class="st">"Year"</span>,</span>
+<span id="cb8-12"><a href="#cb8-12"></a>    <span class="dv">1990</span>, <span class="dv">2005</span>, <span class="at">value =</span> <span class="dv">1991</span>),</span>
+<span id="cb8-13"><a href="#cb8-13"></a>  <span class="fu">plotOutput</span>(<span class="st">"footyScores"</span>)</span>
+<span id="cb8-14"><a href="#cb8-14"></a>  </span>
+<span id="cb8-15"><a href="#cb8-15"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|8,9,10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># for the plot, filter our data and</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co"># draw a line chart</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, out) {</span>
+<span id="cb9-5"><a href="#cb9-5"></a>  output<span class="sc">$</span>footyScores <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a>    scores <span class="sc">%&gt;%</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a>    <span class="fu">filter</span>(</span>
+<span id="cb9-9"><a href="#cb9-9"></a>      year <span class="sc">==</span> input<span class="sc">$</span>year,</span>
+<span id="cb9-10"><a href="#cb9-10"></a>      house <span class="sc">==</span> input<span class="sc">$</span>footyTeam) <span class="sc">%&gt;%</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a>    {</span>
+<span id="cb9-12"><a href="#cb9-12"></a>      <span class="fu">ggplot</span>(.) <span class="sc">+</span></span>
+<span id="cb9-13"><a href="#cb9-13"></a>        <span class="fu">aes</span>(<span class="at">x =</span> game, <span class="at">y =</span> score) <span class="sc">+</span></span>
+<span id="cb9-14"><a href="#cb9-14"></a>        <span class="fu">geom_line</span>()</span>
+<span id="cb9-15"><a href="#cb9-15"></a>    }</span>
+<span id="cb9-16"><a href="#cb9-16"></a>    </span>
+<span id="cb9-17"><a href="#cb9-17"></a>  })}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="so-why-not-use-shiny" class="slide level2 text-red-brown center" style="text-align:center">
+<h2>So why not use <span class="hl hl-red">Shiny?</span></h2>
+<aside class="notes">
+<p>(ref. slides)</p>
+<p>Services like <strong>shinyapps.io</strong> serve websites to people, but they leave a copy of R running to allow things to react like this</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p><span class="fragment">Shiny already works with R Markdown, and it works with Quarto too</span></p>
+<p><span class="fragment">But you need R running to react to things <strong>as people read the document</strong>, not just when you render it</span></p>
+<p><span class="fragment">This requires a special web server! (eg. <a href="https://shinyapps.io">shinyapps.io</a>)</span></p>
+</section>
+<section id="so-why-not-use-shiny-1" class="slide level2 text-red-brown center" style="text-align:center">
+<h2>So why not use <span class="hl hl-red">Shiny?</span></h2>
+<aside class="notes">
+<p>(ref. slides)</p>
+<p>My use is different to many of yours!</p>
+<p>If you want to make something to be used internally, or by special stakeholders, Shiny is great!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>In media, charts could be viewed 100k+ times in days</p>
+<p><span style="font-size:smaller">(If I’m lucky…)</span></p>
+<p>I can’t afford a Shiny server for that kind of traffic!</p>
+</section>
+<section id="enter-observable-js" class="slide level2 text-red-brown center">
+<h2>Enter <span class="hl hl-red">Observable JS</span></h2>
+<p>Quarto gives us a new kind of code chunk called <span class="hl hl-red"><strong>OJS</strong></span></p>
+<p>It lets us write JavaScript that is <strong>naturally reactive</strong></p>
+</section>
+<section id="observable-js-no-server-required" class="slide level2 text-red-brown center">
+<h2>Observable JS: no server required</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment">
+<p>We make a slider called <code>x</code>…</p>
+<div style="color: black">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10" data-startfrom="593" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 592;"><span id="cb10-593"><a href="#cb10-593"></a>viewof x <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb10-594"><a href="#cb10-594"></a>  [<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span>]<span class="op">,</span> { <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p>… and then reference it:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11" data-startfrom="607" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 606;"><span id="cb11-607"><a href="#cb11-607"></a><span class="fu">md</span><span class="vs">`The square of </span><span class="sc">${</span>x<span class="sc">}</span><span class="vs"> is </span><span class="sc">${</span>x<span class="op">**</span><span class="dv">2</span><span class="sc">}</span><span class="vs">!</span></span>
+<span id="cb11-608"><a href="#cb11-608"></a><span class="vs">  How about that!`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-9" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>The text <strong>reacts</strong> to the changing value of <code>x</code>. Nice!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-7" class="slide level2 text-red-brown center">
+<h2></h2>
+<aside class="notes">
+<p>This is really powerful. If we don’t need a special server to make charts that react to users, they can be as popular as we like!</p>
+<p>I can put Quarto documents on GitHub Pages, Netlify, or even Cloudflare Pages, which has <strong>unlimited bandwidth</strong>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column" style="width:45%;">
+<h3 class="r-fit-text" id="quarto">Quarto +</h3>
+<h3 class="r-fit-text" id="ojs-means">OJS means</h3>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<div>
+<ul>
+<li class="fragment">You can do your data analysis in R, Python or Julia</li>
+<li class="fragment">You can make visuals that <strong>react to users</strong></li>
+<li class="fragment">You don’t need to worry about the cost if it gets popular</li>
+<li class="fragment">Learning JavaScript is as easy as possible</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-8" class="slide level2 text-red-brown">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="rpython-widgets">R/Python Widgets</h3>
+<p>“Web content” in R Markdown usually involves a special R or Python package (eg. <a href="https://htmlwidgets.org"><code>htmlwidgets</code></a>)</p>
+<p>👍 Convenient</p>
+<p>👎 Customising means learning JavaScript <em>and</em> learning how an R package works</p>
+</div><div class="column" style="width:50%;">
+<h3 id="quarto-ojs">Quarto + OJS</h3>
+<p>It’s just JavaScript!</p>
+<p>You get great libraries bundled in to try out JS:</p>
+<ul>
+<li>Observable Plot for making charts</li>
+<li>Observable Inputs for making controls</li>
+<li>Arquero for data analysis (it’s just like <code>dplyr</code>)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="seriously-just-like-dplyr-im-not-even-kidding" class="slide level2 text-red-brown center">
+<h2>Seriously, <em>just</em> like <code>dplyr</code>, I’m not even kidding</h2>
+<aside class="notes">
+<p>Remember our survey before? That was doing data analysis on-the-fly with Arquero.</p>
+<p>(click)</p>
+<p>These are basically <code>dplyr</code> or <code>pandas</code> verbs!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Remember the survey before?</p>
+<p>I did that with <strong>Observable Plot</strong> and <strong>Arquero</strong>.</p>
+<p>Here’s the code I used to tally up survey responses:</p>
+</div><div class="column" style="width:60%;">
+<div class="fragment">
+<div class="cell" data-eval="false">
+<div class="sourceCode cell-code" id="cb12" data-startfrom="695" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 694;"><span id="cb12-695"><a href="#cb12-695"></a>countsUsed <span class="op">=</span> aq<span class="op">.</span><span class="fu">from</span>(surveyResults)</span>
+<span id="cb12-696"><a href="#cb12-696"></a>  <span class="op">.</span><span class="fu">derive</span>({</span>
+<span id="cb12-697"><a href="#cb12-697"></a>    <span class="dt">used</span><span class="op">:</span> d <span class="kw">=&gt;</span> op<span class="op">.</span><span class="fu">split</span>(d<span class="op">.</span><span class="at">responseUsed</span><span class="op">,</span> <span class="st">", "</span>)</span>
+<span id="cb12-698"><a href="#cb12-698"></a>  })</span>
+<span id="cb12-699"><a href="#cb12-699"></a>  <span class="op">.</span><span class="fu">select</span>(<span class="st">"used"</span>)</span>
+<span id="cb12-700"><a href="#cb12-700"></a>  <span class="op">.</span><span class="fu">unroll</span>(<span class="st">"used"</span>)</span>
+<span id="cb12-701"><a href="#cb12-701"></a>  <span class="op">.</span><span class="fu">groupby</span>(<span class="st">"used"</span>)</span>
+<span id="cb12-702"><a href="#cb12-702"></a>  <span class="op">.</span><span class="fu">count</span>()</span>
+<span id="cb12-703"><a href="#cb12-703"></a>  <span class="op">.</span><span class="fu">derive</span>({ <span class="dt">measure</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="st">"Have used"</span> })</span>
+<span id="cb12-704"><a href="#cb12-704"></a>  <span class="op">.</span><span class="fu">rename</span>({ <span class="dt">used</span><span class="op">:</span> <span class="st">"tool"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-10" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="use-the-whole-web" class="slide level2 text-red-brown">
+<h2>Use the whole web</h2>
+<aside class="notes">
+<p>And when you’re ready, you can use any other JavaScript library</p>
+<p>(click to see)</p>
+<p>This was a chart we built recently showing that many commercial satellites are used by governments and the military too.</p>
+<p>(click to Italy)</p>
+<p>This uses the <code>d3-euler</code> library, as well as a popup library called <code>micromodal</code>.</p>
+<p>There’s a lot we could do to improve this, but the actual JavaScript being used here would look very familar to an R or Python user!</p>
+<p>This isn’t much more complex than the dropdown menu and footy score chart</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="fragment">
+<iframe src="https://360info-satellitemixeduse.pages.dev/embed-user-overlaps" height="600" width="1400" style="background:white">
+</iframe>
+</div>
+</section></section>
+<section>
+<section id="conclusions" class="title-slide slide level1 text-black-white center" data-background="linear-gradient(45deg, #fff, #666)">
+<h1>Conclusions</h1>
+
+</section>
+<section id="quarto-helps-you-write-documents" class="slide level2 center">
+<h2>Quarto helps you write documents…</h2>
+<p>… whether you use <strong>R</strong>, <strong>Python</strong> or <strong>Julia</strong></p>
+<p>… whether you like <strong>notebooks</strong> or <strong>documents</strong></p>
+<p>… whether you write in a <strong>code editor</strong> or a <strong>notebook editor</strong></p>
+</section>
+<section id="quarto-help-you-make-documents-that-react-to-users" class="slide level2 center">
+<h2>Quarto help you make documents that react to users</h2>
+<p>… and you might learn JavaScript by accident!</p>
+</section>
+<section id="a-checklist-for-trying-quarto" class="slide level2 center">
+<h2>A checklist for trying Quarto</h2>
+<p>🔴 Download Quarto from <a href="https://quarto.org">quarto.org</a> and have a look at the <a href="https://quarto.org/docs/guide">Guide</a></p>
+<p>🟠 Try to render an existing R Markdown document or Jupyter notebook using Quarto and your favourite editor</p>
+<p>🟢 Switch out one of your charts for an <a href="https://observablehq.com/@observablehq/plot">Observable Plot</a> chart</p>
+<p>🔵 Try switching some <code>dplyr</code> or <code>pandas</code> verbs for some <a href="https://observablehq.com/@uwdata/introducing-arquero">Arquero verbs</a></p>
+<p>🟣 Try adding something to your document by importing an <a href="https://quarto.org/docs/interactive/ojs/libraries.html">Observable notebook</a> or a <a href="https://quarto.org/docs/interactive/ojs/libraries.html">JavaScript library</a></p>
+</section></section>
+<section id="thanks-for-listening" class="title-slide slide level1 center">
+<h1>Thanks for listening!</h1>
+<p>Questions?</p>
+<p><a href="https://twitter.com/jimjam-slam"><strong><span class="citation" data-cites="jimjam-slam">@jimjam-slam</span></strong></a></p>
+<p><a href="https://360info.org"><strong>360info.org</strong></a></p>
+<p><a href="https://github.com/360-info"><strong>github.com/360-info</strong></a></p>
+<div class="footer footer-default">
+
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1400,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script type="ojs-module-contents">
+    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"md`## Poll results (Respondents: ${respondentCount})`\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"\nimport { liveGoogleSheet } from \"@jimjamslam/live-google-sheet\";\nimport { aq, op } from \"@uwdata/arquero\";\n\nsurveyResults = liveGoogleSheet(\n  \"https://docs.google.com/spreadsheets/d/e/\" +\n    \"2PACX-1vSVQzZlkSWWR38FRKyFbO2WGYo04ehrJt4TvWkRVOJ7WPRmfQzPAf7AjtyV2EjIY-2DwKW-SfzLoEQw/\" +\n    \"pub?gid=1368316628&single=true&output=csv\",\n  30000, 1, 2);\n\nrespondentCount = surveyResults.length;\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"// get the counts of people using and interested in tools\ncountsUsed = aq.from(surveyResults)\n  .derive({ used: d => op.split(d.responseUsed, \", \") })\n  .select(\"used\")\n  .unroll(\"used\")\n  .groupby(\"used\")\n  .count()\n  .derive({ measure: d => \"Have used\" })\n  .rename({ used: \"tool\" })\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"countsWant = aq.from(surveyResults)\n  .derive({ want: d => op.split(d.responseWant, \", \") })\n  .select(\"want\")\n  .unroll(\"want\")\n  .groupby(\"want\")\n  .count()\n  .derive({ measure: d => \"Want to learn\" })\n  .rename({ want: \"tool\" })\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"// combine the two counts into one dataset again\ncountsAll = [...countsUsed.objects(), ...countsWant.objects()];\n\nplotUsed = Plot.plot({\n  marks: [\n    Plot.barX(countsAll, { y: \"tool\", x: \"count\", fill: \"tool\" }),\n    Plot.ruleX([respondentCount], { stroke: \"#ffffff99\" })\n  ],\n  x : { label: \"\" },\n  y : { label: \"\", tickSize: 0 },\n  facet: { data: countsAll, x: \"measure\", label: \"\" },\n  marginLeft: 140,\n  style: {\n    backgroundColor: \"black\",\n    color: \"white\",\n    width: 1350,\n    height: 500,\n    fontSize: 12,\n  }\n});\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"\nviewof footyTeam = Inputs.select(\n  [\"Pies\", \"Blues\", \"Bombers\", \"Cats\"],\n  { value: \"Blues\", label: \"Footy team\" })\n\nviewof year = Inputs.range([1990, 2005],\n  { value: 1990, step: 1, label: \"Year\", width: 300 })\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"\nscores = FileAttachment(\"data/footy-scores.csv\").csv({ typed: true })\nfilteredScores = scores.filter(d => d.team == footyTeam && d.year == year)\n\nPlot.plot({\n  marks: [\n    Plot.barY(filteredScores, { x: \"game\", y: \"score\", fill: \"game\" })\n  ],\n  x: { label: \"Game number\", labelOffset: 70 },\n  y: { label: \"Score\" },\n  width: 800,\n  height: 500,\n  marginLeft: 60,\n  marginBottom: 90,\n  marginTop: 60,\n  style: {\n    backgroundColor: \"black\",\n    color: \"white\",\n    fontSize: 24\n  }\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-8","inline":false,"source":"viewof x = Inputs.range(\n  [0, 100], { step: 1 })\n"},{"methodName":"interpret","cellName":"ojs-cell-9","inline":false,"source":"md`The square of ${x} is ${x**2}!\n  How about that!`\n"},{"methodName":"interpretQuiet","source":"shinyInput('footyTeam')"},{"methodName":"interpretQuiet","source":"shinyInput('year')"},{"methodName":"interpretQuiet","source":"shinyInput('x')"}]}
+    </script>
+    <script type="module">
+    window._ojs.paths.runtimeToDoc = "../../..";
+    window._ojs.paths.runtimeToRoot = "../../..";
+    window._ojs.paths.docToRoot = "";
+    window._ojs.selfContained = false;
+    window._ojs.runtime.interpretFromScriptTags();
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        setTimeout(function() {
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          let href = ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>
