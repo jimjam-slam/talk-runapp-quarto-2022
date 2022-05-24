@@ -216,7 +216,7 @@ plotUsed = Plot.plot({
 ```
 
 <!-- keep a qr code up in the top-right corner -->
-![](./images/qrcode-survey.png){style="position:fixed;top:0;right:0;" fig-alt="A picture of a QR code to the survey."}
+![](./images/qrcode-survey.png){style="position:fixed;top:0;right:0;width:140px;height:140px" fig-alt="A picture of a QR code to the survey."}
 
 # What are <br>[reproducible reports?]{.hl .hl-gold} {.text-wash-black background="linear-gradient(45deg, #f37335, #fdc830)"}
 
