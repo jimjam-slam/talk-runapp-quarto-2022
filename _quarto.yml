@@ -1,6 +1,6 @@
 project:
   output-dir: out
-  pre-render: quidditch-scores.r
+  pre-render: footy-scores.r
   resources:
     - "images"
     - "fonts"

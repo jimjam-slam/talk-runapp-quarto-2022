@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   .reveal .text-wash-white & { color: $theme-white }
 
   .reveal .text-lime-cyan & {
-    background: linear-gradient(45deg, cyan, lime);
+    background: linear-gradient(45deg, #00aadd, #66dd00);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
       &.text-wash-white { color: $theme-white }
 
       &.text-lime-cyan {
-        background: linear-gradient(45deg, cyan, lime);
+        background: linear-gradient(45deg, #00aadd, #66dd00);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #99999966;
 
   &-purple { background: #6a159e; }
-  &-red    { background: #b1002655; }
+  &-red    { background: #91002655; }
   &-gold   { background: orange; }
 }
 
@@ -193,6 +193,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reveal pre.sourceCode code {
-  background: linear-gradient(-66deg, #001133, #003356);
+  background: linear-gradient(66deg, #bbeeee, #0088dd);
   padding: 12px 18px;
 }

@@ -27,14 +27,15 @@ Data and Digital Storytelling Lead, 360info
 3. What's Quarto? Why can anyone use it?
 4. Web content
 
-#### Slides
+::: {style="margin-top:50px"}
+### Slides
 
 [**https://runapp2022.talks.jamesgoldie.dev**](https://runapp2022.talks.jamesgoldie.dev)
 
-[(or [**https://preeminent-tulumba-f666d5.netlify.app**](https://preeminent-tulumba-f666d5.netlify.app))]{style="font-size:smaller"}
+[(or [**https://preeminent-tulumba-f666d5.netlify.app**](https://preeminent-tulumba-f666d5.netlify.app))]{style="font-size:1rem"}
+:::
 
-
-# Hi! {.text-wash-black background="linear-gradient(45deg, cyan, lime)"}
+# Hi! {.text-wash-black background="linear-gradient(45deg, #00aadd, #66dd00)"}
 
 ## {.text-lime-cyan}
 
@@ -151,8 +152,6 @@ plotUsed = Plot.plot({
   facet: { data: countsAll, x: "measure", label: "" },
   marginLeft: 140,
   style: {
-    backgroundColor: "black",
-    color: "white",
     width: 1350,
     height: 500,
     fontSize: 12,
@@ -252,7 +251,7 @@ R packages for just about every kind of document:
 [`xaringan`](https://github.com/yihui/xaringan) • [`distill`](https://rstudio.github.io/distill) • [`blogdown`](https://bookdown.org/yihui/blogdown) • [`hugodown`](https://github.com/r-lib/hugodown) • [`bookdown`](https://bookdown.org) • [`thesisdown`](https://github.com/ismayc/thesisdown) • [`oxforddown`](https://ulyngs.github.io/oxforddown) • [`unswthesisdown`](https://github.com/jimjam-slam/unswthesisdown) • [`pagedown`](https://github.com/rstudio/pagedown) • [`flexdashboard`](https://pkgs.rstudio.com/flexdashboard/) • [`rmdformats`](https://github.com/juba/rmdformats) • [`rticles`](https://github.com/rstudio/rticles) • [`prettydoc`](https://prettydoc.statr.me/) • [`markdowntemplates`](https://github.com/hrbrmstr/markdowntemplates) • and more...
 :::
 
-# Quarto:<br>[Literate programming for[everyone]{.hl .hl-purple}]{style="font-size:75%;"} { background="linear-gradient(45deg, #4a00e0, #ff0099)"}
+# [Quarto:<br>[Literate programming for[everyone]{.hl .hl-purple}]{style="font-size:75%;"}]{style="color:white"} { background="linear-gradient(45deg, #4a00e0, #ff0099)"}
 
 ::: {.notes}
 So we have two very different approaches to explaining your data.
@@ -348,7 +347,7 @@ With Quarto, you can have a website with people contributing posts as a mix of n
 ::::
 
 
-# Spicing up Quarto<br>[with [reactivity]{.hl .hl-red} and [Observable JS]{.hl .hl-red}]{style="font-size:75%;"} { background="linear-gradient(45deg, #ed213a, #93291e)"}
+# [Spicing up Quarto<br>[with [reactivity]{.hl .hl-red} and [Observable JS]{.hl .hl-red}]{style="font-size:75%;"}]{style="color:white"} { background="linear-gradient(45deg, #ed213a, #93291e)"}
 
 ::: {.notes}
 Quarto has one other big feature that I think we need to talk about
@@ -423,8 +422,6 @@ Plot.plot({
   marginBottom: 90,
   marginTop: 60,
   style: {
-    backgroundColor: "black",
-    color: "white",
     fontSize: 24
   }
 })
