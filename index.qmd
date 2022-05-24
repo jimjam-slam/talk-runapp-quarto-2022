@@ -2,12 +2,13 @@
 format:
   revealjs: 
     theme: [default, style.scss]
+    highlight-style: github
     width: 1400
     css:
       - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css
 ---
 
-## {.center background="white"}
+## {.center}
 
 <h1 class="text-indigo-pink">Quarto<h1>
 
@@ -19,12 +20,16 @@ format:
 Data and Digital Storytelling Lead, 360info
 :::
 
-## Today {.center style="text-align: center;" background="white"}
+## Today {.center}
 
 1. Hello!
 2. What are reproducible reports?
 3. What's Quarto? Why can anyone use it?
 4. Web content
+
+#### Slides
+
+[**https://runapp2022.talks.jamesgoldie.dev**](https://runapp2022.talks.jamesgoldie.dev)
 
 
 # Hi! {.text-wash-black background="linear-gradient(45deg, cyan, lime)"}
@@ -137,7 +142,7 @@ countsAll = [...countsUsed.objects(), ...countsWant.objects()];
 plotUsed = Plot.plot({
   marks: [
     Plot.barX(countsAll, { y: "tool", x: "count", fill: "tool" }),
-    Plot.ruleX([respondentCount])
+    Plot.ruleX([respondentCount], { stroke: "#ffffff99" })
   ],
   x : { label: "" },
   y : { label: "", tickSize: 0 },
@@ -259,7 +264,7 @@ RMarkdown docs have a massive ecosystem for lots of different outputs, and they'
 Quarto tries to have its cake and eat it too.
 :::
 
-## Notebooks or documents: your choice {.text-indigo-pink background="white" style="text-align:center"}
+## Notebooks or documents {.text-indigo-pink style="text-align:center"}
 
 ::: {.notes}
 You don't have to choose between writing in notebooks or documents - they both work!
@@ -279,7 +284,7 @@ Frontmatter still works largely the same as RMarkdown, but you can add it to not
 
 ![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
 
-## R, Python, Julia: your choice {.text-indigo-pink background="white" style="text-align:center"}
+## R, Python, Julia {.text-indigo-pink style="text-align:center"}
 
 ::: {.notes}
 The other big change here is that you can use your **favourite language** in **either format.**
@@ -293,7 +298,7 @@ Quarto is a **separate tool** that runs in the shell. It comes with everything y
 
 ![](images/notebook-vs-document.png){fig-alt="A picture of the same Quarto document side-by-side, written in notebook form on the left and document form on the right." style="width:100%; height:auto;"}
 
-## Your choice of editor {.text-indigo-pink background="white" style="text-align: center"}
+## Editors {.text-indigo-pink style="text-align: center"}
 
 ::: {.notes}
 The examples I've shown are in Visual Studio Code, which is a code editor that I love.
@@ -315,7 +320,7 @@ Quarto also works fantastically with the JupyterLab editor and with RStudio.
 :::
 ::::
 
-## RStudio visual editor {.text-indigo-pink background="white" style="text-align: center"}
+## RStudio visual editor {.text-indigo-pink style="text-align: center"}
 
 ::: {.notes}
 If you use RStudio and you're used to writing documents but like the way notebooks look, you don't even have to choose!
@@ -336,7 +341,7 @@ With Quarto, you can have a website with people contributing posts as a mix of n
 ![](images/rstudio-source.png){fig-alt="Editing a Quarto document in RStudio in the plain text view."}
 :::
 ::: {.column width="50%"}
-![](images/rstudio-visual.png){fig-alt="Editing a Quarto document in RStudio in the visual editor"}"}
+![](images/rstudio-visual.png){fig-alt="Editing a Quarto document in RStudio in the visual editor"}
 :::
 ::::
 
@@ -587,8 +592,7 @@ We make a slider called `x`...
 ```{ojs}
 //| echo: true
 viewof x = Inputs.range(
-  [0, 100],
-  {step: 1, label: ""})
+  [0, 100], { step: 1 })
 ```
 :::
 :::
@@ -597,7 +601,7 @@ viewof x = Inputs.range(
 :::: {.column width="50%"}
 
 ::: {.fragment}
-... and then reference it in some text!
+... and then reference it:
 
 ```{ojs}
 //| echo: true
@@ -690,7 +694,9 @@ Here's the code I used to tally up survey responses:
 //| eval: false
 //| echo: true
 countsUsed = aq.from(surveyResults)
-  .derive({ used: d => op.split(d.responseUsed, ", ") })
+  .derive({
+    used: d => op.split(d.responseUsed, ", ")
+  })
   .select("used")
   .unroll("used")
   .groupby("used")
@@ -728,7 +734,7 @@ This isn't much more complex than the dropdown menu and footy score chart
 
 # Conclusions {.text-black-white background="linear-gradient(45deg, #fff, #666)"}
 
-## Quarto helps you write documents... {.center background="white"}
+## Quarto helps you write documents... {.center }
 
 ... whether you use **R**, **Python** or **Julia**
 
@@ -736,13 +742,13 @@ This isn't much more complex than the dropdown menu and footy score chart
 
 ... whether you write in a **code editor** or a **notebook editor**
 
-## Quarto help you make documents that react to users {.center background="white"}
+## Quarto help you make documents that react to users {.center}
 
 ... and you might learn JavaScript by accident!
 
-## A checklist for trying Quarto {.center background="white"}
+## A checklist for trying Quarto {.center}
 
-🔴 Download Quarto from [quarto.org](https://quarto.org)
+🔴 Download Quarto from [quarto.org](https://quarto.org) and have a look at the [Guide](https://quarto.org/docs/guide)
 
 🟠 Try to render an existing R Markdown document or Jupyter notebook using Quarto and your favourite editor
 
@@ -756,4 +762,8 @@ This isn't much more complex than the dropdown menu and footy score chart
 
 Questions?
 
-[**twitter: @jimjam-slam**](https://twitter.com/jimjam-slam)
+[**@jimjam-slam**](https://twitter.com/jimjam-slam)
+
+[**360info.org**](https://360info.org)
+
+[**github.com/360-info**](https://github.com/360-info)

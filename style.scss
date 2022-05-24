@@ -10,8 +10,8 @@ $font-family-sans-serif: "Inter", Helvetica, sans-serif !default;
 $font-family-monospace: "Cascadia Code PL", monospace !default;
 
 // $body-bg: hsl(176, 94%, 94%);
-$body-bg: black;
-$body-color: white;
+$body-bg: white;
+$body-color: black;
 $headings-color: transparent !default; // because we're texturing them
 $link-color: #42affa;
 
@@ -183,4 +183,16 @@ h1, h2, h3, h4, h5, h6 {
   &-purple { background: #6a159e; }
   &-red    { background: #b1002655; }
   &-gold   { background: orange; }
+}
+
+// source code (probably only looks reasonable on dark tbh
+
+.reveal div.sourceCode.cell-code {
+  border: none;
+  box-shadow: 0px 25px 85px #33669966;
+}
+
+.reveal pre.sourceCode code {
+  background: linear-gradient(-66deg, #001133, #003356);
+  padding: 12px 18px;
 }
