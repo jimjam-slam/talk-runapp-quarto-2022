@@ -450,11 +450,11 @@ We can let our chart **react** to the decisions our users make about footy team 
 ```{ojs}
 //| echo: false
 
-viewof footyTeam = Inputs.select(
+viewof footyTeam2 = Inputs.select(
   ["Pies", "Blues", "Bombers", "Cats"],
   { value: "Blues", label: "Footy team" })
 
-viewof year = Inputs.range([1990, 2005],
+viewof year2 = Inputs.range([1990, 2005],
   { value: 1990, step: 1, label: "Year", width: 300 })
 ```
 :::
@@ -463,12 +463,12 @@ viewof year = Inputs.range([1990, 2005],
 ```{ojs}
 //| echo: false
 
-scores = FileAttachment("data/footy-scores.csv").csv({ typed: true })
-filteredScores = scores.filter(d => d.team == footyTeam && d.year == year)
+scores2 = FileAttachment("data/footy-scores.csv").csv({ typed: true })
+filteredScores2 = scores.filter(d => d.team == footyTeam2 && d.year == year2)
 
 Plot.plot({
   marks: [
-    Plot.barY(filteredScores, { x: "game", y: "score", fill: "game" })
+    Plot.barY(filteredScores2, { x: "game", y: "score", fill: "game" })
   ],
   x: { label: "Game number", labelOffset: 70 },
   y: { label: "Score" },
@@ -671,6 +671,118 @@ The text **reacts** to the changing value of `x`. Nice!
 :::
 ::::
 
+:::::
+
+## Footy example with Quarto + OJS {.text-red-brown .center .smaller}
+
+::::: {.columns}
+:::: {.column width="40%"}
+
+::: {.panel-tabset}
+
+### Plot
+
+```{ojs}
+//| echo: false
+
+viewof footyTeam = Inputs.select(
+  ["Pies", "Blues", "Bombers", "Cats"],
+  { value: "Blues", label: "Footy team" })
+
+viewof year = Inputs.range([1990, 2005],
+  { value: 1990, step: 1, label: "Year", width: 300 })
+```
+
+### Code
+
+```{ojs}
+//| eval: false
+//| echo: true
+
+viewof footyTeam = Inputs.select(
+  ["Pies", "Blues", "Bombers", "Cats"],
+  { value: "Blues", label: "Footy team" })
+
+viewof year = Inputs.range(
+  [1990, 2005],
+  {
+    value: 1990,
+    step: 1, label: "Year",
+    width: 300
+  })
+```
+
+:::
+::::
+
+:::: {.column width="60%"}
+::: {.panel-tabset}
+
+### Plot
+
+```{ojs}
+//| echo: false
+
+scores = FileAttachment("data/footy-scores.csv").csv({ typed: true })
+filteredScores = scores.filter(d => d.team == footyTeam && d.year == year)
+
+Plot.plot({
+  marks: [
+    Plot.barY(filteredScores, { x: "game", y: "score", fill: "game" })
+  ],
+  x: { label: "Game number", labelOffset: 70 },
+  y: { label: "Score" },
+  width: 800,
+  height: 500,
+  marginLeft: 60,
+  marginBottom: 90,
+  marginTop: 60,
+  style: {
+    fontSize: 24
+  }
+})
+```
+
+### Code
+
+```{ojs}
+//| eval: false
+//| echo: true
+
+// load the data
+scores = FileAttachment("data/footy-scores.csv")
+  .csv({ typed: true })
+
+// filter it using the controls
+filteredScores = scores.filter(
+  d => d.team == footyTeam &&
+  d.year == year)
+
+// make the chart
+Plot.plot({
+  marks: [
+    Plot.barY(filteredScores, {
+      x: "game",
+      y: "score",
+      fill: "game"
+    })
+  ],
+  x: {
+    label: "Game number",
+    labelOffset: 70
+  },
+  y: { label: "Score" },
+  width: 800,
+  height: 500,
+  marginLeft: 60,
+  marginBottom: 90,
+  marginTop: 60,
+  style: { fontSize: 24 }
+})
+```
+:::
+
+::::
 :::::
 
 ## {.text-red-brown .center}
